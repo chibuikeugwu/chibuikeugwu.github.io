@@ -26,6 +26,7 @@ redirect_from:
     with a main focus on developing robust, safe, and trustworthy <span style="font-weight: bold;">deep learning algorithms</span> and theoretical frameworks for addressing critical real-world challenges within safety-sensitive domains. My current work focuses on:
   </p>
   <ul>
+    <li>Building trustworthy Large Language Model (LLM) hallucination control policies.</li>
     <li>Adapting calibration-based uncertainty quantification methods, like Conformal Prediction, to facilitate effective and secure human-ML collaboration.</li>
     <li>Developing Trustworthy Out-of-Distribution (OOD) Detection methods to ensure the reliability of ML models deployed in real-world applications.</li>
   </ul>
@@ -57,16 +58,18 @@ Latest Updates
 ======
 <div style="border: 2px solid #000000; padding: 15px; background-color: #F0FBFD; border-radius: 15px; margin-bottom: 20px; font-family: Arial, sans-serif; color: #333333;">
   <ul>
+    <li><span style="font-weight: bold;">Feb, 2025 - </span> 
+        Exciting News! 🎉 Our paper, "Uncertainty-Aware Energy Management for Wearable IoT Devices with Conformal Prediction," has been accepted to the 62nd ACM/IEEE Design Automation Conference (DAC 2025)!
+    </li>
+    
     <li><span style="font-weight: bold;">Nov., 2024 - </span> 
-        Passed my Ph.D. Qualifying Examination!
+        Passed my Ph.D. Qualifying Examination! Excited for the next phase of my research!
     </li>
     
     <li><span style="font-weight: bold;">April, 2024 - </span> 
         &#x1F3C5; Outstanding Graduate Teaching Assistant in <a href='https://eecs.wsu.edu/' target='_blank' style="color: #0077CC; text-decoration: none;">EECS</a> Award, <a href='https://vcea.wsu.edu/' target='_blank' style="color: #0077CC; text-decoration: none;">VCEA</a>.
     </li>
-
-    <li> 
-    </li>
+    
   </ul>
 </div>
  
