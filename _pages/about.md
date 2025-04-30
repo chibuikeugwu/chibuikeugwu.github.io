@@ -58,6 +58,10 @@ Latest Updates
 ======
 <div style="border: 2px solid #000000; padding: 15px; background-color: #F0FBFD; border-radius: 15px; margin-bottom: 20px; font-family: Arial, sans-serif; color: #333333;">
   <ul>
+    <li><span style="font-weight: bold;">April, 2025 - </span> 
+        Great News! 🎉 Our paper, "Sustainable Wearables for Health Applications and Beyond via Uncertainty-Aware Energy Management," has been accepted to the 34th International Joint Conference on Artificial Intelligence (IJCAI 2025)!
+    </li>
+    
     <li><span style="font-weight: bold;">Feb., 2025 - </span> 
         Exciting News! 🎉 Our paper, "Uncertainty-Aware Energy Management for Wearable IoT Devices with Conformal Prediction," has been accepted to the 62nd ACM/IEEE Design Automation Conference (DAC 2025)!
     </li>
