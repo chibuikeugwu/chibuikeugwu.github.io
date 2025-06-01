@@ -64,6 +64,10 @@ Latest Updates
 ======
 <div style="border: 2px solid #000000; padding: 15px; background-color: #F0FBFD; border-radius: 15px; margin-bottom: 20px; font-family: Arial, sans-serif; color: #333333;">
   <ul>
+    <li><span style="font-weight: bold;">May, 2025 - </span> 
+        Successfully passed my PhD Preliminary Exam and am now a PhD Candidate 🎉!
+    </li>
+    
     <li><span style="font-weight: bold;">April, 2025 - </span> 
         Great News! 🎉 Our paper, "Sustainable Wearables for Health Applications and Beyond via Uncertainty-Aware Energy Management," has been accepted to the 34th International Joint Conference on Artificial Intelligence (IJCAI 2025)!
     </li>
