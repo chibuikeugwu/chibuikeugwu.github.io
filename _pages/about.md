@@ -19,8 +19,8 @@ redirect_from:
   <p style="color: #000000;">
     I am a Ph.D. student in Computer Science at 
     <a href='https://wsu.edu' target='_blank' style="color: #0077CC; text-decoration: none;">Washington State University</a>, 
-    where I am fortunate to be advised by 
-    <a href='https://eecs.wsu.edu/~jana/' target='_blank' style="color: #0077CC; text-decoration: none;">Prof. Jana Doppa</a>. 
+    where I am fortunate to be advised by professors
+    <a href='https://eecs.wsu.edu/~jana/' target='_blank' style="color: #0077CC; text-decoration: none;">Jana Doppa</a> and <a href='https://www.yanyan.pro/index.html' target='_blank' style="color: #0077CC; text-decoration: none;">Yan Yan</a> . 
     My general research interests are in <span style="font-weight: bold;">Machine Learning (ML)</span> and 
     <span style="font-weight: bold;">Artificial Intelligence (AI)</span>, 
     with a main focus on developing robust, safe, and trustworthy <span style="font-weight: bold;">deep learning algorithms</span> and theoretical frameworks for addressing critical real-world challenges within safety-sensitive domains. My current work focuses on:
