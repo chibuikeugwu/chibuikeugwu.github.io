@@ -48,7 +48,7 @@ Education
     </li> -->
 
     <li>
-      <span style="font-weight: bold; color: #008000;">MS., Computer Science</span> <i class="fas fa-graduation-cap"></i><br>
+      <span style="font-weight: bold; color: #008000;">M.Sc., Computer Science</span> <i class="fas fa-graduation-cap"></i><br>
       <a href='https://wsu.edu' target='_blank' style="color: #000000; text-decoration: none; font-weight: bold; padding-left: 20px; display: inline-block;">Washington State University</a> (2022 - 2025)
     </li>
 
