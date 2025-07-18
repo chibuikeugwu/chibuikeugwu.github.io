@@ -17,7 +17,7 @@ redirect_from:
 
 <div style="border: 2px solid #000000; padding: 15px; background-color: #F0FBFD; border-radius: 15px; margin-bottom: 20px; font-family: Arial, sans-serif; color: #333333;">
   <p style="color: #000000;">
-    I am a Ph.D. student in Computer Science at 
+    I am a Ph.D. candidate in Computer Science at 
     <a href='https://wsu.edu' target='_blank' style="color: #0077CC; text-decoration: none;">Washington State University</a>, 
     where I am fortunate to be advised by professors
     <a href='https://eecs.wsu.edu/~jana/' target='_blank' style="color: #0077CC; text-decoration: none;">Jana Doppa</a> and <a href='https://www.yanyan.pro/index.html' target='_blank' style="color: #0077CC; text-decoration: none;">Yan Yan</a> . 
@@ -64,6 +64,12 @@ Latest Updates
 ======
 <div style="border: 2px solid #000000; padding: 15px; background-color: #F0FBFD; border-radius: 15px; margin-bottom: 20px; font-family: Arial, sans-serif; color: #333333;">
   <ul>
+
+    <li><span style="font-weight: bold;">July, 2025 - </span> 
+        Great News! 🎉 Our paper, "ERGo: Energy-Efficient Hybrid Graph Neural Network Training on Heterogeneous Processing-In-Memory Architecture," has been accepted to the International Conference on Compilers, Architecture, and Synthesis for Embedded Systems, Embedded Systems Week (ESWEEK 2025)!
+    </li>
+
+
     <li><span style="font-weight: bold;">May, 2025 - </span> 
         Successfully passed my PhD Preliminary Exam 🎉. Now a PhD Candidate!
     </li>
