@@ -28,7 +28,7 @@ redirect_from:
   <ul>
     <li>Building trustworthy Large Language Model (LLM) hallucination control policies.</li>
     <li>Adapting calibration-based uncertainty quantification methods, like Conformal Prediction, to facilitate effective and secure human-ML collaboration.</li>
-    <li>Developing Trustworthy Out-of-Distribution (OOD) Detection methods to ensure the reliability of ML models deployed in real-world applications.</li>
+    <li>Developing uncertainty-aware energy management methods for wearable Internet of Things (IoT) devices.</li>
   </ul>
 </div>
 
