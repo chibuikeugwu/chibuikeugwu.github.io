@@ -24,12 +24,6 @@ redirect_from:
     My general research interests are in <span style="font-weight: bold;">Machine Learning (ML)</span> and 
     <span style="font-weight: bold;">Artificial Intelligence (AI)</span>, 
     with a main focus on developing robust, safe, and trustworthy <span style="font-weight: bold;">deep learning algorithms</span> and theoretical frameworks for addressing critical real-world challenges within safety-sensitive domains. My current work focuses on:
-  
-  <!-- Image inside the same box -->
-  <div style="text-align: center; margin-top: 15px;">
-    <img src="/images/predSet.png" alt="Illustration of TML for classification" style="width: 300px; height: auto; border-radius: 1px;">
-  </div>
-
   </p>
   <ul>
     <li>Building trustworthy Large Language Model (LLM) hallucination control policies.</li>
@@ -37,7 +31,10 @@ redirect_from:
     <li>Developing uncertainty-aware energy management methods for wearable Internet of Things (IoT) devices.</li>
   </ul>
 
-
+  <!-- Image inside the same box -->
+  <div style="text-align: center; margin-top: 15px;">
+    <img src="/images/predSet.png" alt="Illustration of TML for classification" style="width: 350px; height: auto; border-radius: 1px;">
+  </div>
 </div>
 
 
