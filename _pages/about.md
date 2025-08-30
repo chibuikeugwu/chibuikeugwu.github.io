@@ -16,8 +16,6 @@ redirect_from:
 </style>
 
 <div style="border: 2px solid #000000; padding: 15px; background-color: #F0FBFD; border-radius: 15px; margin-bottom: 20px; font-family: Arial, sans-serif; color: #333333;">
-
-![Illustration of TML for classification](/images/predSet.png){: .align-right width="300px"}
   <p style="color: #000000;">
     I am a Ph.D. candidate in Computer Science at 
     <a href='https://wsu.edu' target='_blank' style="color: #0077CC; text-decoration: none;">Washington State University</a>, 
@@ -32,6 +30,11 @@ redirect_from:
     <li>Adapting calibration-based uncertainty quantification methods, like Conformal Prediction, to facilitate effective and secure human-ML collaboration.</li>
     <li>Developing uncertainty-aware energy management methods for wearable Internet of Things (IoT) devices.</li>
   </ul>
+
+  <!-- Image inside the same box -->
+  <div style="text-align: center; margin-top: 15px;">
+    <img src="/images/predSet.png" alt="Illustration of TML for classification" style="max-width: 100%; height: auto; border-radius: 10px;">
+  </div>
 </div>
 
 
