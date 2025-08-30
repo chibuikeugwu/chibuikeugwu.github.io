@@ -32,7 +32,7 @@ redirect_from:
   </ul>
 </div>
 
-
+![Illustration of TML for classification](/images/predSet.png){: .align-right width="300px"}
 
 Education
 ======
@@ -48,12 +48,12 @@ Education
     </li> -->
 
     <li>
-      <span style="font-weight: bold; color: #008000;">M.Sc., Computer Science</span> <i class="fas fa-graduation-cap"></i><br>
+      <span style="font-weight: bold; color: #008000;">M.S., Computer Science</span> <i class="fas fa-graduation-cap"></i><br>
       <a href='https://wsu.edu' target='_blank' style="color: #000000; text-decoration: none; font-weight: bold; padding-left: 20px; display: inline-block;">Washington State University</a> (2022 - 2025)
     </li>
 
     <li>
-      <span style="font-weight: bold; color: #008000;">B.Sc., Statistics</span> <i class="fas fa-graduation-cap"></i> (First Class Honors)<br>
+      <span style="font-weight: bold; color: #008000;">B.S., Statistics</span> <i class="fas fa-graduation-cap"></i> (First Class Honors)<br>
       <a href='https://www.unn.edu.ng/' target='_blank' style="color: #000000; text-decoration: none; font-weight: bold; padding-left: 20px; display: inline-block;">University of Nigeria</a> (2014 - 2018)
     </li>
   </ul>
