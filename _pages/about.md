@@ -9,54 +9,70 @@ redirect_from:
 
 <style>
   html, body {
-    height: 100;
+    height: 100%;
     margin: 0;
     background-color: #E0F7FA;
   }
+
+  .container {
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+  }
+
+  .box {
+    border: 2px solid #000000;
+    padding: 15px;
+    background-color: #F0FBFD;
+    border-radius: 15px;
+    font-family: Arial, sans-serif;
+    color: #333333;
+    flex: 1; /* Equal width */
+  }
+
+  .education-box {
+    max-width: 300px; /* optional: keep Education narrower */
+  }
 </style>
 
-<div style="border: 2px solid #000000; padding: 15px; background-color: #F0FBFD; border-radius: 15px; margin-bottom: 20px; font-family: Arial, sans-serif; color: #333333;">
-  <p style="color: #000000;">
-    I am a Ph.D. candidate in Computer Science at 
-    <a href='https://wsu.edu' target='_blank' style="color: #0077CC; text-decoration: none;">Washington State University</a>, 
-    where I am fortunate to be advised by professors
-    <a href='https://eecs.wsu.edu/~jana/' target='_blank' style="color: #0077CC; text-decoration: none;">Jana Doppa</a> and <a href='https://www.yanyan.pro/index.html' target='_blank' style="color: #0077CC; text-decoration: none;">Yan Yan</a> . 
-    My general research interests are in <span style="font-weight: bold;">Machine Learning (ML)</span> and 
-    <span style="font-weight: bold;">Artificial Intelligence (AI)</span>, 
-    with a main focus on developing robust, safe, and trustworthy <span style="font-weight: bold;">deep learning algorithms</span> and theoretical frameworks for addressing critical real-world challenges within safety-sensitive domains. My current work focuses on:
-  </p>
-  <ul>
-    <li>Building trustworthy Large Language Model (LLM) hallucination control policies.</li>
-    <li>Adapting calibration-based uncertainty quantification methods, like Conformal Prediction, to facilitate effective and secure human-ML collaboration.</li>
-    <li>Developing uncertainty-aware energy management methods for wearable Internet of Things (IoT) devices.</li>
-  </ul>
-</div>
+<div class="container">
+  <!-- About Section -->
+  <div class="box">
+    <p style="color: #000000;">
+      I am a Ph.D. candidate in Computer Science at 
+      <a href='https://wsu.edu' target='_blank' style="color: #0077CC; text-decoration: none;">Washington State University</a>, 
+      where I am fortunate to be advised by professors
+      <a href='https://eecs.wsu.edu/~jana/' target='_blank' style="color: #0077CC; text-decoration: none;">Jana Doppa</a> and 
+      <a href='https://www.yanyan.pro/index.html' target='_blank' style="color: #0077CC; text-decoration: none;">Yan Yan</a>. 
+      My general research interests are in <span style="font-weight: bold;">Machine Learning (ML)</span> and 
+      <span style="font-weight: bold;">Artificial Intelligence (AI)</span>, 
+      with a main focus on developing robust, safe, and trustworthy <span style="font-weight: bold;">deep learning algorithms</span> and theoretical frameworks for addressing critical real-world challenges within safety-sensitive domains. My current work focuses on:
+    </p>
+    <ul>
+      <li>Building trustworthy Large Language Model (LLM) hallucination control policies.</li>
+      <li>Adapting calibration-based uncertainty quantification methods, like Conformal Prediction, to facilitate effective and secure human-ML collaboration.</li>
+      <li>Developing uncertainty-aware energy management methods for wearable Internet of Things (IoT) devices.</li>
+    </ul>
+  </div>
 
-
-
-Education
-======
-<div style="border: 2px solid #000000; padding: 15px; background-color: #F0FBFD; border-radius: 15px; margin-bottom: 20px;">
-  <ul style="list-style-type: none; padding-left: 0;">
-    <li>
-      <span style="font-weight: bold; color: #008000;">Ph.D., Computer Science</span><br>
-      <a href='https://wsu.edu' target='_blank' style="color: #000000; text-decoration: none; font-weight: bold; padding-left: 20px; display: inline-block;">Washington State University</a> (2022 - present)
-    </li>
-    <!-- <li>
-      <span style="font-weight: bold; color: #008000;">MS., Computer Science</span> <i class="fas fa-graduation-cap"></i><br>
-      <a href='https://wsu.edu' target='_blank' style="color: #000000; text-decoration: none; font-weight: bold; padding-left: 20px; display: inline-block;">Washington State University</a> (2022 - 2024)
-    </li> -->
-
-    <li>
-      <span style="font-weight: bold; color: #008000;">M.Sc., Computer Science</span> <i class="fas fa-graduation-cap"></i><br>
-      <a href='https://wsu.edu' target='_blank' style="color: #000000; text-decoration: none; font-weight: bold; padding-left: 20px; display: inline-block;">Washington State University</a> (2022 - 2025)
-    </li>
-
-    <li>
-      <span style="font-weight: bold; color: #008000;">B.Sc., Statistics</span> <i class="fas fa-graduation-cap"></i> (First Class Honors)<br>
-      <a href='https://www.unn.edu.ng/' target='_blank' style="color: #000000; text-decoration: none; font-weight: bold; padding-left: 20px; display: inline-block;">University of Nigeria</a> (2014 - 2018)
-    </li>
-  </ul>
+  <!-- Education Section -->
+  <div class="box education-box">
+    <h2>Education</h2>
+    <ul style="list-style-type: none; padding-left: 0;">
+      <li>
+        <span style="font-weight: bold; color: #008000;">Ph.D., Computer Science</span><br>
+        <a href='https://wsu.edu' target='_blank' style="color: #000000; text-decoration: none; font-weight: bold;">Washington State University</a> (2022 - present)
+      </li>
+      <li>
+        <span style="font-weight: bold; color: #008000;">M.Sc., Computer Science</span><br>
+        <a href='https://wsu.edu' target='_blank' style="color: #000000; text-decoration: none; font-weight: bold;">Washington State University</a> (2022 - 2025)
+      </li>
+      <li>
+        <span style="font-weight: bold; color: #008000;">B.Sc., Statistics</span> (First Class Honors)<br>
+        <a href='https://www.unn.edu.ng/' target='_blank' style="color: #000000; text-decoration: none; font-weight: bold;">University of Nigeria</a> (2014 - 2018)
+      </li>
+    </ul>
+  </div>
 </div>
 
 

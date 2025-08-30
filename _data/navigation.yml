@@ -9,6 +9,10 @@ main:
     #url: /cv/
     url: /files/Resume_Chibuike.pdf #/files/cv.pdf
 
+  - title: "Publications"
+    url: /my_publications/
+
+
   - title: "Awards"
     url: /awards/
 
@@ -19,8 +23,6 @@ main:
   #- title: "Projects"
   #  url: /projects/
 
-  - title: "Publications"
-    url: /my_publications/
 
   #- title: "Talks"
   #  url: /talks/    
