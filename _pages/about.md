@@ -33,7 +33,7 @@ redirect_from:
 
   <!-- Image inside the same box -->
   <div style="text-align: center; margin-top: 15px;">
-    <img src="/images/predSet.png" alt="Illustration of TML for classification" style="width: 300px; height: auto; border-radius: 10px;">
+    <img src="/images/predSet.png" alt="Illustration of TML for classification" style="width: 300px; height: auto; border-radius: 1px;">
   </div>
 </div>
 
