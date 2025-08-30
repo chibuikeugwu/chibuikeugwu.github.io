@@ -15,8 +15,9 @@ redirect_from:
   }
 </style>
 
-![Illustration of TML for classification](/images/predSet.png){: .align-right width="300px"}
 <div style="border: 2px solid #000000; padding: 15px; background-color: #F0FBFD; border-radius: 15px; margin-bottom: 20px; font-family: Arial, sans-serif; color: #333333;">
+
+![Illustration of TML for classification](/images/predSet.png){: .align-right width="300px"}
   <p style="color: #000000;">
     I am a Ph.D. candidate in Computer Science at 
     <a href='https://wsu.edu' target='_blank' style="color: #0077CC; text-decoration: none;">Washington State University</a>, 
