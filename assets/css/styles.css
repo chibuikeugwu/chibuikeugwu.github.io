@@ -386,9 +386,12 @@ a:hover {
 
 #projects .project-image {
   display: block;
-  width: 80%;
+  width: 90%;
+  max-width: 100%;
   height: auto;
+  max-height: 220px;
   margin: 0 auto;
+  object-fit: contain;
   border-radius: 8px;
   border: 1px solid var(--card-border);
   background: var(--bg-0);
