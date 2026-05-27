@@ -367,12 +367,6 @@ a:hover {
   border-bottom: none;
 }
 
-#projects .project-title {
-  margin: 0 0 1rem 0;
-  font-size: 1.1rem;
-  font-weight: 600;
-}
-
 #projects .project-body {
   display: flex;
   flex-wrap: nowrap;
@@ -385,12 +379,16 @@ a:hover {
   flex: 0 0 50%;
   width: 50%;
   max-width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 #projects .project-image {
   display: block;
-  width: 100%;
+  width: 80%;
   height: auto;
+  margin: 0 auto;
   border-radius: 8px;
   border: 1px solid var(--card-border);
   background: var(--bg-0);
@@ -413,10 +411,6 @@ a:hover {
   line-height: 1.6;
 }
 
-#projects .project-no-image .desc {
-  margin-top: 0.5rem;
-}
-
 @media (max-width: 767.98px) {
   #projects .project-body {
     flex-direction: column;
@@ -428,6 +422,10 @@ a:hover {
     flex: 0 0 100%;
     width: 100%;
     max-width: 100%;
+  }
+
+  #projects .project-image {
+    width: 80%;
   }
 }
 
