@@ -352,91 +352,82 @@ a:hover {
 }
 
 /* ========================= */
-/* PROJECT ROWS              */
+/* PROJECTS — 50% image | 50% text */
 /* ========================= */
 
 #projects .project-row {
-  margin-top: 28px;
+  margin-bottom: 2rem;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid var(--card-border);
 }
 
-#projects .project-row:first-of-type {
-  margin-top: 0;
+#projects .project-row:last-child {
+  margin-bottom: 0;
+  padding-bottom: 0;
+  border-bottom: none;
 }
 
-#projects .project-row .project-title {
-  margin-bottom: 14px;
+#projects .project-title {
+  margin: 0 0 1rem 0;
+  font-size: 1.1rem;
+  font-weight: 600;
 }
 
-/* 50% image | 50% writeup */
 #projects .project-body {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 24px;
+  display: flex;
+  flex-wrap: nowrap;
   align-items: center;
+  gap: 1.5rem;
   width: 100%;
-  min-height: 200px;
-  margin-bottom: 24px;
 }
 
 #projects .project-image-wrap {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  min-width: 0;
-  overflow: visible;
-  padding: 8px;
+  flex: 0 0 50%;
+  width: 50%;
+  max-width: 50%;
 }
 
-/* Base width fills left half; scale(1.5) = 150% larger */
 #projects .project-image {
   display: block;
   width: 100%;
-  max-width: 100%;
   height: auto;
-  object-fit: contain;
   border-radius: 8px;
   border: 1px solid var(--card-border);
   background: var(--bg-0);
-  transform: scale(1.5);
-  transform-origin: center center;
 }
 
 #projects .project-desc-col {
+  flex: 0 0 50%;
+  width: 50%;
+  max-width: 50%;
   display: flex;
   align-items: center;
-  justify-content: center;
-  min-width: 0;
 }
 
 #projects .project-desc-col .desc {
   width: 100%;
-  margin: 0;
 }
 
 #projects .project-desc-col .desc p {
-  margin-bottom: 0;
-}
-
-#projects .project-no-image {
-  margin-top: 28px;
+  margin: 0;
+  line-height: 1.6;
 }
 
 #projects .project-no-image .desc {
-  margin-top: 8px;
+  margin-top: 0.5rem;
 }
 
 @media (max-width: 767.98px) {
   #projects .project-body {
-    grid-template-columns: 1fr;
-    gap: 16px;
+    flex-direction: column;
+    align-items: stretch;
   }
 
-  #projects .project-image {
-    transform: scale(1.2);
-  }
-
+  #projects .project-image-wrap,
   #projects .project-desc-col {
-    justify-content: flex-start;
+    flex: 0 0 100%;
+    width: 100%;
+    max-width: 100%;
   }
 }
 
