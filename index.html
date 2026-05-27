@@ -16,6 +16,13 @@
     <script defer src="assets/fontawesome/js/all.js"></script>
     <link rel="stylesheet" href="assets/plugins/bootstrap/css/bootstrap.min.css">
     <link id="theme-style" rel="stylesheet" href="assets/css/styles.css">
+    <script>
+        (function () {
+            var t = localStorage.getItem("site-theme");
+            if (!t) t = window.matchMedia("(prefers-color-scheme: light)").matches ? "light" : "dark";
+            document.documentElement.setAttribute("data-theme", t);
+        })();
+    </script>
 </head>
 
 <body>
@@ -43,78 +50,32 @@
                     </div>
                 </div>
 
-                <div class="col-12 col-md-auto" style="align-self: flex-start; justify-content: flex-end">
-                    <div>
+                <div class="col-12 col-md-auto header-actions" style="align-self: flex-start">
+                    <nav class="header-nav" aria-label="Page sections">
                         <ul>
-                            <li class="list-inline-item"><a href="#projects">Projects</a></li>
-                            <li class="list-inline-item"><a href="#publications">Publications</a></li>
-                            <li class="list-inline-item"><a href="files/Resume_Chibuike.pdf" target="_blank">CV</a></li>
-                            <li class="list-inline-item"><a href="#awards">Awards</a></li>
-                            <li class="list-inline-item"><a href="#teaching">Teaching</a></li>
+                            <li><a href="#projects">Projects</a></li>
+                            <li><a href="#news">News</a></li>
+                            <li><a href="#publications">Publications</a></li>
+                            <li><a href="files/Resume_Chibuike.pdf" target="_blank">CV</a></li>
+                            <li><a href="#awards">Awards</a></li>
+                            <li><a href="#teaching">Teaching</a></li>
                         </ul>
-                    </div>
-                    <div class="d-flex justify-content-end">
-                        <a class="btn btn-cta-primary" href="mailto:chibuike.ugwu@wsu.edu" target="_blank"><i
-                                class="fas fa-paper-plane"></i> Contact Me</a>
-                    </div>
+                    </nav>
+                    <button type="button" id="themeToggle" class="theme-toggle-btn" aria-pressed="true"
+                        title="Switch to light mode">
+                        <i class="fas fa-sun" aria-hidden="true"></i>
+                        <span class="theme-toggle-label">Light</span>
+                    </button>
+                    <a class="btn btn-cta-primary" href="mailto:chibuike.ugwu@wsu.edu" target="_blank"><i
+                            class="fas fa-paper-plane"></i> Contact Me</a>
                 </div>
             </div>
         </div>
     </header>
 
     <div class="container sections-wrapper py-5 px-1">
-        <div class="row">
-            <div class="col-md-6 col-12">
-                <aside class="education aside section">
-                    <div class="section-inner shadow-sm rounded">
-                        <h2 class="heading">Professional Experience</h2>
-                        <div class="content">
-                            <div class="item">
-                                <h3 class="title">
-                                    <i class="fas fa-flask" style="font-size:0.85em; margin-right:4px;"></i>
-                                    Graduate Research Assistant
-                                </h3>
-                                <h4 class="university">Washington State University <span class="year">(2022–Present)</span></h4>
-                            </div>
-                        </div>
-                    </div>
-                </aside>
-            </div>
-
-            <div class="col-md-6 col-12 d-flex align-items-center">
-                <aside class="education aside section w-100">
-                    <div class="section-inner shadow-sm rounded">
-                        <h2 class="heading">Education</h2>
-                        <div class="content">
-                            <div class="item">
-                                <h3 class="title">
-                                    <i class="fas fa-graduation-cap" style="font-size:0.85em; margin-right:4px;"></i>
-                                    Ph.D. Computer Science
-                                </h3>
-                                <h4 class="university">Washington State University <span class="year">(2022–Present)</span></h4>
-                            </div>
-                            <div class="item">
-                                <h3 class="title">
-                                    <i class="fas fa-graduation-cap" style="font-size:0.85em; margin-right:4px;"></i>
-                                    M.S. Computer Science
-                                </h3>
-                                <h4 class="university">Washington State University <span class="year">(2022–2025)</span></h4>
-                            </div>
-                            <div class="item">
-                                <h3 class="title">
-                                    <i class="fas fa-graduation-cap" style="font-size:0.85em; margin-right:4px;"></i>
-                                    B.S. Statistics (First Class Honors)
-                                </h3>
-                                <h4 class="university">University of Nigeria <span class="year">(2014–2018)</span></h4>
-                            </div>
-                        </div>
-                    </div>
-                </aside>
-            </div>
-        </div>
-
-        <div class="row" style="margin-top:20px;">
-            <div class="col-12">
+        <div class="row top-intro-row">
+            <div class="col-lg-10 col-12 about-col">
                 <section class="about section">
                     <div class="section-inner shadow-sm rounded">
                         <h2 class="heading">About Me</h2>
@@ -138,6 +99,37 @@
                     </div>
                 </section>
             </div>
+
+            <div class="col-lg-2 col-12">
+                <aside class="education aside section education-compact w-100">
+                    <div class="section-inner shadow-sm rounded h-100">
+                        <h2 class="heading">Education</h2>
+                        <div class="content">
+                            <div class="item">
+                                <h3 class="title">
+                                    <i class="fas fa-graduation-cap" style="font-size:0.85em; margin-right:4px;"></i>
+                                    Ph.D. CS
+                                </h3>
+                                <h4 class="university">WSU <span class="year">(2022–Present)</span></h4>
+                            </div>
+                            <div class="item">
+                                <h3 class="title">
+                                    <i class="fas fa-graduation-cap" style="font-size:0.85em; margin-right:4px;"></i>
+                                    M.S. CS
+                                </h3>
+                                <h4 class="university">WSU <span class="year">(2022–2025)</span></h4>
+                            </div>
+                            <div class="item">
+                                <h3 class="title">
+                                    <i class="fas fa-graduation-cap" style="font-size:0.85em; margin-right:4px;"></i>
+                                    B.S. Statistics
+                                </h3>
+                                <h4 class="university">Univ. of Nigeria <span class="year">(2014–2018)</span></h4>
+                            </div>
+                        </div>
+                    </div>
+                </aside>
+            </div>
         </div>
 
         <div class="row">
@@ -146,15 +138,15 @@
                     <div class="section-inner shadow-sm rounded">
                         <h2 class="heading">Projects</h2>
                         <div class="content">
-                            <div class="item row">
+                            <div class="item project-block">
                                 <h3 class="project-title" style="font-size:18px; margin-top:10px">
                                     <i class="fas fa-gears"></i> Trustworthy LLM hallucination control
                                 </h3>
-                                <div class="col-md-4 col-12">
+                                <div class="project-image-wrap">
                                     <img class="img-fluid project-image" src="assets/images/projects/llm.png"
                                         alt="LLM hallucination control" />
                                 </div>
-                                <div class="desc col-md-8 col-12" style="padding-top:20px">
+                                <div class="desc">
                                     <p>
                                         I develop policies and frameworks to detect, quantify, and control hallucinations
                                         in large language models, enabling safer deployment in human-facing and
@@ -163,15 +155,15 @@
                                 </div>
                             </div>
 
-                            <div class="item row">
-                                <h3 class="project-title" style="font-size:18px; margin-top:30px">
+                            <div class="item project-block" style="margin-top:28px">
+                                <h3 class="project-title" style="font-size:18px;">
                                     <i class="fas fa-gears"></i> Conformal prediction for human–ML collaboration
                                 </h3>
-                                <div class="col-md-4 col-12" style="padding-top:30px">
+                                <div class="project-image-wrap">
                                     <img class="img-fluid project-image" src="assets/images/projects/cp.png"
                                         alt="Conformal prediction for uncertainty quantification" />
                                 </div>
-                                <div class="desc col-md-8 col-12">
+                                <div class="desc">
                                     <p>
                                         I adapt calibration-based uncertainty quantification methods—especially conformal
                                         prediction—to produce reliable prediction sets and uncertainty regions that support
@@ -180,15 +172,15 @@
                                 </div>
                             </div>
 
-                            <div class="item row">
-                                <h3 class="project-title" style="font-size:18px; margin-top:30px">
+                            <div class="item project-block" style="margin-top:28px">
+                                <h3 class="project-title" style="font-size:18px;">
                                     <i class="fas fa-gears"></i> Uncertainty-aware wearable IoT energy management
                                 </h3>
-                                <div class="col-md-4 col-12" style="padding-top:30px">
+                                <div class="project-image-wrap">
                                     <img class="img-fluid project-image" src="assets/images/projects/wearable.png"
                                         alt="Wearable IoT energy management" />
                                 </div>
-                                <div class="desc col-md-8 col-12">
+                                <div class="desc">
                                     <p>
                                         I design uncertainty-aware energy management methods for resource-constrained
                                         wearable IoT devices, using conformal prediction to forecast ambient energy
@@ -204,15 +196,15 @@
                                 </div>
                             </div>
 
-                            <div class="item row">
-                                <h3 class="project-title" style="font-size:18px; margin-top:30px">
+                            <div class="item project-block" style="margin-top:28px">
+                                <h3 class="project-title" style="font-size:18px;">
                                     <i class="fas fa-gears"></i> Multi-target cognitive health from smartwatch data
                                 </h3>
-                                <div class="col-md-4 col-12" style="padding-top:30px">
+                                <div class="project-image-wrap">
                                     <img class="img-fluid project-image" src="assets/images/projects/uric.png"
                                         alt="URIC uncertainty regions" />
                                 </div>
-                                <div class="desc col-md-8 col-12">
+                                <div class="desc">
                                     <p>
                                         I develop methods such as Uncertainty Regions via Importance-weighted Calibration
                                         (URIC) to construct compact, interpretable multi-target prediction regions for
@@ -220,6 +212,40 @@
                                     </p>
                                 </div>
                             </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="news section" id="news">
+                    <div class="section-inner shadow-sm rounded">
+                        <h2 class="heading">Latest News</h2>
+                        <div class="content">
+                            <ul class="news-list">
+                                <li>
+                                    <span class="news-date">July 2025 —</span>
+                                    Our paper, <em>ERGo: Energy-Efficient Hybrid Graph Neural Network Training on Heterogeneous Processing-In-Memory Architecture</em>, was accepted to Embedded Systems Week (ESWEEK 2025)!
+                                </li>
+                                <li>
+                                    <span class="news-date">May 2025 —</span>
+                                    Successfully passed my Ph.D. Preliminary Exam. Now a Ph.D. candidate!
+                                </li>
+                                <li>
+                                    <span class="news-date">April 2025 —</span>
+                                    Our paper, <em>Sustainable Wearables for Health Applications and Beyond via Uncertainty-Aware Energy Management</em>, was accepted to IJCAI 2025!
+                                </li>
+                                <li>
+                                    <span class="news-date">Feb. 2025 —</span>
+                                    Our paper, <em>Uncertainty-Aware Energy Management for Wearable IoT Devices with Conformal Prediction</em>, was accepted to DAC 2025!
+                                </li>
+                                <li>
+                                    <span class="news-date">Nov. 2024 —</span>
+                                    Passed my Ph.D. Qualifying Examination!
+                                </li>
+                                <li>
+                                    <span class="news-date">April 2024 —</span>
+                                    Outstanding Graduate Teaching Assistant in <a href="https://eecs.wsu.edu/" target="_blank">EECS</a>, <a href="https://vcea.wsu.edu/" target="_blank">VCEA</a>.
+                                </li>
+                            </ul>
                         </div>
                     </div>
                 </section>
@@ -366,6 +392,7 @@
 
     <script type="text/javascript" src="assets/plugins/popper.min.js"></script>
     <script type="text/javascript" src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="assets/js/theme.js"></script>
     <script type="text/javascript" src="assets/js/main.js"></script>
 </body>
 
