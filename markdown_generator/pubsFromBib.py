@@ -1,4 +1,5 @@
 #!/usr/bin/env python
+# Purpose: Defines core logic for this script/module.
 # coding: utf-8
 
 # # Publications markdown generator for academicpages

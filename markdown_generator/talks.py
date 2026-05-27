@@ -1,4 +1,5 @@
 
+# Purpose: Defines core logic for this script/module.
 # coding: utf-8
 
 # # Talks markdown generator for academicpages
@@ -50,6 +51,7 @@ html_escape_table = {
     }
 
 def html_escape(text):
+    # Explain: html escape logic.
     if type(text) is str:
         return "".join(html_escape_table.get(c,c) for c in text)
     else:
