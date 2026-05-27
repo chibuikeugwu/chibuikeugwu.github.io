@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="dark">
 
 <head>
     <title>Chibuike E. Ugwu</title>
@@ -15,11 +15,11 @@
 
     <script defer src="assets/fontawesome/js/all.js"></script>
     <link rel="stylesheet" href="assets/plugins/bootstrap/css/bootstrap.min.css">
-    <link id="theme-style" rel="stylesheet" href="assets/css/styles.css?v=8">
+    <link id="theme-style" rel="stylesheet" href="assets/css/styles.css?v=9">
     <script>
         (function () {
             var t = localStorage.getItem("site-theme");
-            if (!t) t = window.matchMedia("(prefers-color-scheme: light)").matches ? "light" : "dark";
+            if (t !== "light" && t !== "dark") t = "dark";
             document.documentElement.setAttribute("data-theme", t);
         })();
     </script>
@@ -58,7 +58,8 @@
                             <li><a href="#publications">Publications</a></li>
                             <li><a href="files/Resume_Chibuike.pdf" target="_blank">CV</a></li>
                             <li><a href="#awards">Awards</a></li>
-                            <li><a href="#teaching">Teaching</a></li>
+                            <li><a href="#experience">Experience</a></li>
+                            <li><a href="#service">Service</a></li>
                         </ul>
                     </nav>
                     <button type="button" id="themeToggle" class="theme-toggle-btn" aria-pressed="true"
@@ -83,17 +84,17 @@
                             <p>
                                 I am a Ph.D. candidate in Computer Science at
                                 <a href="https://wsu.edu" target="_blank">Washington State University</a>,
-                                where I am fortunate to be advised by professors
-                                <a href="https://eecs.wsu.edu/~jana/" target="_blank">Jana Doppa</a> and
-                                <a href="https://www.yanyan.pro/index.html" target="_blank">Yan Yan</a>.
-                                My general research interests are in machine learning and artificial intelligence,
-                                with a focus on developing robust, safe, and trustworthy deep learning algorithms
-                                and theoretical frameworks for safety-sensitive domains. My current work includes:
+                                advised by
+                                <a href="https://eecs.wsu.edu/~jana/" target="_blank">Prof. Jana Doppa</a>.
+                                My research is in <strong>artificial intelligence</strong> and
+                                <strong>machine learning</strong>, with a focus on robust, safe, and trustworthy ML
+                                algorithms with theoretical guarantees for safety-sensitive domains (e.g., healthcare).
+                                My current work includes:
                             </p>
                             <ul style="margin-top:-0.75em">
                                 <li>Building trustworthy Large Language Model (LLM) hallucination control policies.</li>
-                                <li>Adapting calibration-based uncertainty quantification methods, like conformal prediction, to facilitate effective and secure human–ML collaboration.</li>
-                                <li>Developing uncertainty-aware energy management methods for wearable Internet of Things (IoT) devices.</li>
+                                <li>Advancing <strong>conformal prediction</strong>-based uncertainty quantification with theoretical guarantees to facilitate effective human–ML collaboration (e.g., Clinician-in-the-Loop), including deployed prototypes for UTI detection and beyond.</li>
+                                <li>Developing uncertainty-aware energy management methods for wearable Internet of Things (IoT) devices for mobile health applications and beyond.</li>
                             </ul>
                         </div>
                     </div>
@@ -110,21 +111,21 @@
                                     <i class="fas fa-graduation-cap" style="font-size:0.85em; margin-right:4px;"></i>
                                     Ph.D. Computer Science
                                 </h3>
-                                <h4 class="university">Washington State University <span class="year">(2022–Present)</span></h4>
+                                <h4 class="university">Washington State University <span class="year">(Jul. 2022 – May 2027)</span></h4>
                             </div>
                             <div class="item">
                                 <h3 class="title">
                                     <i class="fas fa-graduation-cap" style="font-size:0.85em; margin-right:4px;"></i>
                                     M.Sc. Computer Science
                                 </h3>
-                                <h4 class="university">Washington State University <span class="year">(2022–2025)</span></h4>
+                                <h4 class="university">Washington State University <span class="year">(Aug. 2022 – May 2025)</span></h4>
                             </div>
                             <div class="item">
                                 <h3 class="title">
                                     <i class="fas fa-graduation-cap" style="font-size:0.85em; margin-right:4px;"></i>
                                     B.Sc. Statistics (First Class Honors)
                                 </h3>
-                                <h4 class="university">University of Nigeria <span class="year">(2014–2018)</span></h4>
+                                <h4 class="university">University of Nigeria <span class="year">(Sept. 2014 – Nov. 2018)</span></h4>
                             </div>
                         </div>
                     </div>
@@ -147,9 +148,11 @@
                                     <div class="project-desc-col">
                                         <div class="desc">
                                             <p>
-                                                I adapt calibration-based uncertainty quantification methods—especially conformal
-                                                prediction—to produce reliable prediction sets and uncertainty regions that support
-                                                effective and secure collaboration between humans and machine learning systems.
+                                                I advance conformal prediction-based uncertainty quantification with theoretical
+                                                guarantees for human–ML collaboration, including software prototypes such as
+                                                <a href="https://anonymous.4open.science/r/apr-4C4C/" target="_blank">APR</a>,
+                                                URIC, and Clinician-in-the-Loop Conformal-Calibrated Intervals (CCI) for UTI
+                                                risk detection in smart homes.
                                             </p>
                                         </div>
                                     </div>
@@ -208,28 +211,24 @@
                         <div class="content">
                             <ul class="news-list">
                                 <li>
-                                    <span class="news-date">July 2025 —</span>
-                                    Our paper, <em>ERGo: Energy-Efficient Hybrid Graph Neural Network Training on Heterogeneous Processing-In-Memory Architecture</em>, was accepted to Embedded Systems Week (ESWEEK 2025)!
+                                    <span class="news-date">2026 —</span>
+                                    Honored with Overall Outstanding Research Assistant (<a href="https://vcea.wsu.edu/" target="_blank">VCEA</a>), Outstanding Research Assistant in <a href="https://eecs.wsu.edu/" target="_blank">EECS</a>, and GPSA Research Assistant of the Year awards; received AAAI Student Scholarship and Volunteer Program award.
+                                </li>
+                                <li>
+                                    <span class="news-date">2026 —</span>
+                                    Papers accepted at <strong>AAAI 2026</strong> (Clinician-in-the-Loop UTI detection with CCI), <strong>ACM HEALTH</strong> (URIC for cognitive health), and <strong>ACM TODAES</strong> (uncertainty-aware IoT energy management).
+                                </li>
+                                <li>
+                                    <span class="news-date">2025 —</span>
+                                    Received the Mahmoud M. Dillsi Graduate Fellowship; papers accepted at <strong>IJCAI 2025</strong>, <strong>DAC 2025</strong>, and <strong>ACM TECS</strong> (ERGo).
                                 </li>
                                 <li>
                                     <span class="news-date">May 2025 —</span>
                                     Successfully passed my Ph.D. Preliminary Exam. Now a Ph.D. candidate!
                                 </li>
                                 <li>
-                                    <span class="news-date">April 2025 —</span>
-                                    Our paper, <em>Sustainable Wearables for Health Applications and Beyond via Uncertainty-Aware Energy Management</em>, was accepted to IJCAI 2025!
-                                </li>
-                                <li>
-                                    <span class="news-date">Feb. 2025 —</span>
-                                    Our paper, <em>Uncertainty-Aware Energy Management for Wearable IoT Devices with Conformal Prediction</em>, was accepted to DAC 2025!
-                                </li>
-                                <li>
-                                    <span class="news-date">Nov. 2024 —</span>
-                                    Passed my Ph.D. Qualifying Examination!
-                                </li>
-                                <li>
-                                    <span class="news-date">April 2024 —</span>
-                                    Outstanding Graduate Teaching Assistant in <a href="https://eecs.wsu.edu/" target="_blank">EECS</a>, <a href="https://vcea.wsu.edu/" target="_blank">VCEA</a>.
+                                    <span class="news-date">2024 —</span>
+                                    Outstanding Graduate Teaching Assistant in <a href="https://eecs.wsu.edu/" target="_blank">EECS</a> (<a href="https://vcea.wsu.edu/" target="_blank">VCEA</a>); Nakahara Tsuyoshi and Mary Fellowship.
                                 </li>
                             </ul>
                         </div>
@@ -240,75 +239,100 @@
                     <div class="section-inner shadow-sm rounded">
                         <h2 class="heading">Select Publications</h2>
                         <div class="content">
-                            <div class="item">
-                                <h3 class="title" style="font-weight:bold;font-size:18px;margin-top:30px">
 
-                                    <p class="paper">
-                                        <i class="fas fa-newspaper" style="font-size:0.7em;"></i>
-                                        <a class="paper-title" href="https://dl.acm.org/doi/10.1145/3760402" target="_blank">
-                                            ERGo: Energy-Efficient Hybrid Graph Neural Network Training on Heterogeneous Processing-In-Memory Architecture
-                                        </a>
-                                        <span class="paper-authors">
-                                            P. Dhingra, <span class="me">C. E. Ugwu</span>, J. Doppa, P. P. Pande
-                                        </span>
-                                        <span class="paper-venue">
-                                            Embedded Systems Week (ESWEEK), 2025
-                                        </span>
-                                    </p>
+                            <p class="paper">
+                                <i class="fas fa-newspaper" style="font-size:0.7em;"></i>
+                                <a class="paper-title" href="https://arxiv.org/html/2511.18334v1" target="_blank">
+                                    Clinician-in-the-Loop Smart Home System to Detect Urinary Tract Infection Flare-Ups via Uncertainty-Aware Decision Support
+                                </a>
+                                <span class="paper-authors">
+                                    <span class="me">C. E. Ugwu</span>, R. Fritz, D. J. Cook, J. Doppa
+                                </span>
+                                <span class="paper-venue">40th AAAI Conference on Artificial Intelligence (AAAI), 2026</span>
+                            </p>
 
-                                    <p class="paper">
-                                        <i class="fas fa-newspaper" style="font-size:0.7em;"></i>
-                                        <a class="paper-title" href="https://www.ijcai.org/proceedings/2025/1079" target="_blank">
-                                            Sustainable Wearables for Health Applications and Beyond via Uncertainty-Aware Energy Management
-                                        </a>
-                                        <span class="paper-authors">
-                                            D. Hussein, <span class="me">C. E. Ugwu*</span>, G. Bhat, J. Doppa
-                                        </span>
-                                        <span class="paper-venue">
-                                            International Joint Conference on Artificial Intelligence (IJCAI), 2025 · (* equal contribution)
-                                        </span>
-                                    </p>
+                            <p class="paper">
+                                <i class="fas fa-newspaper" style="font-size:0.7em;"></i>
+                                <span class="paper-title">Importance-Weighted Calibrated Region Prediction of Multi-target Cognitive Health Measures from Smartwatch Sensor Data</span>
+                                <span class="paper-authors">
+                                    <span class="me">C. E. Ugwu</span>, Y. Yan, D. J. Cook, M. Schmitter-Edgecombe, J. Doppa
+                                </span>
+                                <span class="paper-venue">ACM Transactions on Computing for Healthcare, 2026</span>
+                            </p>
 
-                                    <p class="paper">
-                                        <i class="fas fa-newspaper" style="font-size:0.7em;"></i>
-                                        <a class="paper-title" href="https://par.nsf.gov/servlets/purl/10599943" target="_blank">
-                                            Uncertainty-Aware Energy Management for Wearable IoT Devices with Conformal Prediction
-                                        </a>
-                                        <span class="paper-authors">
-                                            D. Hussein, <span class="me">C. E. Ugwu*</span>, G. Bhat, J. Doppa
-                                        </span>
-                                        <span class="paper-venue">
-                                            ACM/IEEE Design Automation Conference (DAC), 2025 · (* equal contribution)
-                                        </span>
-                                    </p>
+                            <p class="paper">
+                                <i class="fas fa-newspaper" style="font-size:0.7em;"></i>
+                                <span class="paper-title">Trading Off Performance and Sustainability in Internet of Things: An Uncertainty-Aware Hierarchical Energy Management Approach</span>
+                                <span class="paper-authors">
+                                    <span class="me">C. E. Ugwu*</span>, D. Hussein*, G. Bhat, J. Doppa
+                                </span>
+                                <span class="paper-venue">ACM Transactions on Design Automation of Electronic Systems (TODAES), 2026 · (* equal contribution)</span>
+                            </p>
 
-                                    <p class="paper">
-                                        <i class="fas fa-newspaper" style="font-size:0.7em;"></i>
-                                        <a class="paper-title" href="https://doi.org/10.1002/qre.3296" target="_blank">
-                                            Sensitivity and robustness of randomization test and F-test in some experimental designs
-                                        </a>
-                                        <span class="paper-authors">
-                                            A. V. Oladugba, <span class="me">C. E. Ugwu</span>, U. C. Onwuamaeze
-                                        </span>
-                                        <span class="paper-venue">
-                                            Quality and Reliability Engineering International, 2023
-                                        </span>
-                                    </p>
+                            <p class="paper">
+                                <i class="fas fa-newspaper" style="font-size:0.7em;"></i>
+                                <a class="paper-title" href="https://www.ijcai.org/proceedings/2025/1079" target="_blank">
+                                    Sustainable Wearables for Health Applications and Beyond via Uncertainty-Aware Energy Management
+                                </a>
+                                <span class="paper-authors">
+                                    <span class="me">C. E. Ugwu*</span>, D. Hussein*, G. Bhat, J. Doppa
+                                </span>
+                                <span class="paper-venue">International Joint Conference on Artificial Intelligence (IJCAI), 2025 · (* equal contribution)</span>
+                            </p>
 
-                                    <p class="paper">
-                                        <i class="fas fa-newspaper" style="font-size:0.7em;"></i>
-                                        <span class="paper-title">
-                                            A Comparison of randomization test and F-test in some experimental designs
-                                        </span>
-                                        <span class="paper-authors">
-                                            A. V. Oladugba, <span class="me">C. E. Ugwu</span>, U. C. Onwuamaeze
-                                        </span>
-                                        <span class="paper-venue">
-                                            Nigerian Statistical Association 42nd Annual Conference, 2018
-                                        </span>
-                                    </p>
+                            <p class="paper">
+                                <i class="fas fa-newspaper" style="font-size:0.7em;"></i>
+                                <a class="paper-title" href="https://par.nsf.gov/servlets/purl/10599943" target="_blank">
+                                    Uncertainty-Aware Energy Management for Wearable IoT Devices with Conformal Prediction
+                                </a>
+                                <span class="paper-authors">
+                                    <span class="me">C. E. Ugwu*</span>, D. Hussein*, G. Bhat, J. Doppa
+                                </span>
+                                <span class="paper-venue">ACM/IEEE Design Automation Conference (DAC), 2025 · (* equal contribution)</span>
+                            </p>
 
-                            </div>
+                            <p class="paper">
+                                <i class="fas fa-newspaper" style="font-size:0.7em;"></i>
+                                <a class="paper-title" href="https://dl.acm.org/doi/10.1145/3760402" target="_blank">
+                                    ERGo: Energy-Efficient Hybrid Graph Neural Network Training on Heterogeneous Processing-In-Memory Architecture
+                                </a>
+                                <span class="paper-authors">
+                                    P. Dhingra, <span class="me">C. E. Ugwu</span>, J. Doppa, P. P. Pande
+                                </span>
+                                <span class="paper-venue">ACM Transactions on Embedded Computing Systems (TECS), 2025</span>
+                            </p>
+
+                            <p class="paper">
+                                <i class="fas fa-newspaper" style="font-size:0.7em;"></i>
+                                <a class="paper-title" href="https://doi.org/10.1002/qre.3296" target="_blank">
+                                    Sensitivity and robustness of randomization test and F-test in some experimental designs
+                                </a>
+                                <span class="paper-authors">
+                                    A. V. Oladugba, <span class="me">C. E. Ugwu</span>, U. C. Onwuamaeze
+                                </span>
+                                <span class="paper-venue">Quality and Reliability Engineering International, 2023</span>
+                            </p>
+
+                            <h4 class="pub-subheading">Papers Under Review</h4>
+
+                            <p class="paper">
+                                <i class="fas fa-newspaper" style="font-size:0.7em;"></i>
+                                <span class="paper-title">Adaptive Uncertainty-Aware Conformal Regions for Continuous Multi-Target Prediction</span>
+                                <span class="paper-authors">
+                                    <span class="me">C. E. Ugwu</span>, H. Shahrokhi, Y. Yan, D. J. Cook, J. Doppa
+                                </span>
+                                <span class="paper-venue">Transactions on Machine Learning Research (TMLR), 2026</span>
+                            </p>
+
+                            <p class="paper">
+                                <i class="fas fa-newspaper" style="font-size:0.7em;"></i>
+                                <span class="paper-title">Controlling Coverage for Batch Evaluation via Vanilla Conformal Prediction</span>
+                                <span class="paper-authors">
+                                    <span class="me">C. E. Ugwu*</span>, H. Shahrokhi*, Y. Yan, J. Doppa
+                                </span>
+                                <span class="paper-venue">SIAM International Conference on Data Mining (SDM), 2026 · (* equal contribution)</span>
+                            </p>
+
                         </div>
                     </div>
                 </section>
@@ -322,7 +346,17 @@
                             <div class="content">
                                 <ul class="list-unstyled" style="margin-bottom:0;">
 
-                                    <h4 class="university" style="font-size:16px;">2024</h4>
+                                    <h4 class="university" style="font-size:16px;">2026</h4>
+                                    <li style="font-size:14px;"><i class="fa fa-award"></i> Overall Outstanding Research Assistant, <a href="https://vcea.wsu.edu/" target="_blank">VCEA</a></li>
+                                    <li style="font-size:14px;"><i class="fa fa-award"></i> Outstanding Research Assistant in Computer Science, <a href="https://eecs.wsu.edu/" target="_blank">EECS</a></li>
+                                    <li style="font-size:14px;"><i class="fa fa-award"></i> GPSA Research Assistant of the Year Award</li>
+                                    <li style="font-size:14px;"><i class="fa fa-award"></i> AAAI Student Scholarship and Volunteer Program</li>
+
+                                    <h4 class="university" style="font-size:16px; margin-top:12px;">2025</h4>
+                                    <li style="font-size:14px;"><i class="fa fa-award"></i> Mahmoud M. Dillsi Graduate Fellowship, EECS</li>
+
+                                    <h4 class="university" style="font-size:16px; margin-top:12px;">2024</h4>
+                                    <li style="font-size:14px;"><i class="fa fa-award"></i> Nakahara Tsuyoshi and Mary Fellowship, EECS</li>
                                     <li style="font-size:14px;"><i class="fa fa-award"></i> Outstanding Graduate Teaching Assistant in <a href="https://eecs.wsu.edu/" target="_blank">EECS</a>, <a href="https://vcea.wsu.edu/" target="_blank">VCEA</a></li>
 
                                     <h4 class="university" style="font-size:16px; margin-top:12px;">2022</h4>
@@ -330,7 +364,7 @@
 
                                     <h4 class="university" style="font-size:16px; margin-top:12px;">2018</h4>
                                     <li style="font-size:14px;"><i class="fa fa-award"></i> Best Graduating Student — Statistics Department, University of Nigeria</li>
-                                    <li style="font-size:14px;"><i class="fa fa-award"></i> <a href="https://www.vanguardngr.com/2018/05/unn-wins-nmc-nsa-competition-for-universities/" target="_blank">Winner: Nigerian Statistical Association competition for undergraduates</a> (University of Nigeria representative)</li>
+                                    <li style="font-size:14px;"><i class="fa fa-award"></i> <a href="https://www.vanguardngr.com/2018/05/unn-wins-nmc-nsa-competition-for-universities/" target="_blank">Winner: Nigerian Statistical Association competition</a> (University of Nigeria representative)</li>
                                     <li style="font-size:14px;"><i class="fa fa-award"></i> <a href="https://www.vanguardngr.com/2018/05/unn-wins-nmc-nsa-competition-for-universities/" target="_blank">Gold medalist: NSA competition individual category</a></li>
 
                                 </ul>
@@ -340,27 +374,68 @@
                 </div>
 
                 <div class="col-12" style="margin-top:20px;">
-                    <section class="experience section" id="teaching">
+                    <section class="experience section" id="experience">
                         <div class="section-inner shadow-sm rounded">
-                            <h2 class="heading">Teaching</h2>
+                            <h2 class="heading">Professional Appointments</h2>
                             <div class="content">
+                                <div class="item" style="margin-bottom:18px;">
+                                    <h3 class="title" style="font-weight:bold;font-size:16px;">
+                                        Research Assistant <span class="year">Aug 2022 – Present</span>
+                                    </h3>
+                                    <div class="university" style="margin-bottom:6px;">EECS Department, Washington State University · Pullman, WA</div>
+                                    <p style="margin:0;font-size:15px;">Developing novel algorithms and theory for robust and trustworthy machine learning.</p>
+                                </div>
                                 <div class="item">
                                     <h3 class="title" style="font-weight:bold;font-size:16px;">
-                                        Teaching Assistant, Washington State University
+                                        Teaching Assistant and Guest Lecturer <span class="year">Aug 2022 – Dec 2024</span>
                                     </h3>
+                                    <div class="university" style="margin-bottom:8px;">EECS Department, Washington State University · Pullman, WA</div>
                                     <div style="margin-left:10px;">
                                         <div class="title">
                                             <i class="fas fa-school-flag" style="font-size:0.7em; margin-right:6px;"></i>
-                                            CptS 223 - <span class="year">Advanced Data Structures in C++</span>
-                                            <span class="place">Fall 2022, Fall 2023</span>
+                                            CptS 223 — <span class="year">Advanced Data Structures C/C++</span>
+                                            <span class="place">Fall 2022, Fall 2023, Fall 2024</span>
                                         </div>
                                         <div class="title">
                                             <i class="fas fa-school-flag" style="font-size:0.7em; margin-right:6px;"></i>
-                                            CptS 315 - <span class="year">Introduction to Data Mining</span>
+                                            CptS 315 — <span class="year">Introduction to Data Mining</span>
                                             <span class="place">Spring 2023, Spring 2024</span>
                                         </div>
                                     </div>
                                 </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+
+                <div class="col-12" style="margin-top:20px;">
+                    <section class="experience section" id="service">
+                        <div class="section-inner shadow-sm rounded">
+                            <h2 class="heading">Service</h2>
+                            <div class="content">
+                                <h4 class="pub-subheading" style="margin-top:0;">Program Committee Member</h4>
+                                <ul class="service-list">
+                                    <li>International Conference on Machine Learning (ICML) — 2026, 2025</li>
+                                    <li>International Conference on Uncertainty in Artificial Intelligence (UAI) — 2026</li>
+                                    <li>International Conference on Learning Representations (ICLR) — 2026</li>
+                                    <li>AAAI Conference on Artificial Intelligence — 2026, 2025</li>
+                                    <li>AAAI AI for Social Impact (AISI) — 2026, 2025, 2024</li>
+                                    <li>AAAI AI for Innovative Applications (IAAI) — 2026</li>
+                                </ul>
+                                <h4 class="pub-subheading">Conference Reviewer</h4>
+                                <ul class="service-list">
+                                    <li>NeurIPS — 2025</li>
+                                    <li>IJCAI — 2025</li>
+                                </ul>
+                                <h4 class="pub-subheading">Volunteer and Outreach</h4>
+                                <ul class="service-list">
+                                    <li>AAAI — Volunteer, 2026</li>
+                                    <li>IJCAI — Volunteer, 2025</li>
+                                    <li>Digital AgAthon (AgAID Institute) — Mentor and Judge, 2025</li>
+                                    <li>WSU Summer Programming Camp — Instructor, 2025</li>
+                                    <li>SURCA — Judge, 2026</li>
+                                    <li>CrimsonCode Hackathon — Judge, 2026</li>
+                                </ul>
                             </div>
                         </div>
                     </section>

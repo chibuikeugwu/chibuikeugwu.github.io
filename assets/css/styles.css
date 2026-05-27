@@ -461,6 +461,36 @@ a:hover {
   margin-bottom: 1rem;
 }
 
+.pub-subheading {
+  font-size: 1.05rem;
+  font-weight: 700;
+  margin: 1.25rem 0 0.75rem;
+  color: var(--primary-text);
+  border-bottom: 1px solid var(--accent-muted);
+  padding-bottom: 4px;
+}
+
+.service-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 0.5rem 0;
+}
+
+.service-list li {
+  font-size: 14.5px;
+  line-height: 1.55;
+  padding: 4px 0 4px 1rem;
+  position: relative;
+  color: var(--primary-text);
+}
+
+.service-list li::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  color: var(--accent);
+}
+
 /* ========================= */
 /* ICONS                     */
 /* ========================= */
