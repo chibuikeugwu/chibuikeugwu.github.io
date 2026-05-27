@@ -372,16 +372,14 @@ a:hover {
   display: flex;
   align-items: center;
   justify-content: center;
-  flex: 0 0 auto;
-  max-width: 200px;
+  padding-right: 12px;
 }
 
 .project-image {
   display: block;
-  width: auto;
+  width: 100%;
+  max-width: 100%;
   height: auto;
-  max-width: 180px;
-  max-height: 135px;
   object-fit: contain;
   border-radius: 8px;
   border: 1px solid var(--card-border);
@@ -393,6 +391,7 @@ a:hover {
   align-items: center;
   justify-content: center;
   min-height: 100%;
+  padding-left: 12px;
 }
 
 .project-desc-col .desc {
@@ -534,13 +533,11 @@ a:hover {
   }
 
   .project-image-wrap {
-    max-width: 100%;
-    margin-bottom: 12px;
+    margin-bottom: 14px;
+    padding-right: 0;
   }
 
-  .project-image {
-    max-width: 160px;
-    max-height: 120px;
-    margin: 0 auto;
+  .project-desc-col {
+    padding-left: 0;
   }
 }
