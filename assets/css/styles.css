@@ -233,29 +233,29 @@ a:hover {
   margin-bottom: 15px;
 }
 
-.education-compact .item {
+.education-sidebar .item {
   margin-bottom: 14px;
 }
 
-.education-compact .item:last-child {
+.education-sidebar .item:last-child {
   margin-bottom: 0;
 }
 
-.education-compact .item .title {
-  font-size: 14px;
+.education-sidebar .item .title {
+  font-size: 15px;
   font-weight: 600;
-  line-height: 1.35;
-}
-
-.education-compact .item .university {
-  font-size: 12.5px;
-  color: var(--secondary-text);
   line-height: 1.4;
-  margin-top: 2px;
 }
 
-.education-compact .heading {
-  font-size: 1.15rem;
+.education-sidebar .item .university {
+  font-size: 13.5px;
+  color: var(--secondary-text);
+  line-height: 1.45;
+  margin-top: 4px;
+}
+
+.education-sidebar .heading {
+  font-size: 1.25rem;
   margin-bottom: 12px;
 }
 
@@ -352,33 +352,68 @@ a:hover {
 }
 
 /* ========================= */
-/* PROJECT IMAGES (larger)   */
+/* PROJECT ROWS              */
 /* ========================= */
 
-.project-block .desc {
-  margin-top: 14px;
+.project-row {
+  margin-top: 28px;
+}
+
+.project-row:first-of-type {
+  margin-top: 0;
+}
+
+.project-row .project-title {
+  margin-bottom: 12px;
 }
 
 .project-image-wrap {
   text-align: center;
-  margin: 12px 0 0;
-  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .project-image {
   width: 100%;
-  max-width: 920px;
+  max-width: 260px;
   height: auto;
   border-radius: 8px;
   border: 1px solid var(--card-border);
   background: var(--bg-0);
-  margin: 0 auto;
-  display: block;
 }
 
-@media (min-width: 768px) {
-  .project-image {
-    max-width: 100%;
+.project-desc-col {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100%;
+}
+
+.project-desc-col .desc {
+  width: 100%;
+  margin: 0;
+}
+
+.project-desc-col .desc p {
+  margin-bottom: 0;
+}
+
+.project-no-image {
+  margin-top: 28px;
+}
+
+.project-no-image .desc {
+  margin-top: 8px;
+}
+
+@media (max-width: 767.98px) {
+  .project-image-wrap {
+    margin-bottom: 14px;
+  }
+
+  .project-desc-col {
+    justify-content: flex-start;
   }
 }
 
@@ -456,12 +491,12 @@ a:hover {
 /* ========================= */
 
 @media (max-width: 991.98px) {
-  .education-compact .item .title {
-    font-size: 15px;
+  .education-sidebar .item .title {
+    font-size: 16px;
   }
 
-  .education-compact .item .university {
-    font-size: 13.5px;
+  .education-sidebar .item .university {
+    font-size: 14px;
   }
 }
 
