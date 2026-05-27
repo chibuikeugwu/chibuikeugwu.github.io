@@ -372,12 +372,17 @@ a:hover {
   display: flex;
   align-items: center;
   justify-content: center;
+  flex: 0 0 auto;
+  max-width: 200px;
 }
 
 .project-image {
-  width: 100%;
-  max-width: 260px;
+  display: block;
+  width: auto;
   height: auto;
+  max-width: 180px;
+  max-height: 135px;
+  object-fit: contain;
   border-radius: 8px;
   border: 1px solid var(--card-border);
   background: var(--bg-0);
@@ -528,7 +533,14 @@ a:hover {
     margin: 4px 8px;
   }
 
+  .project-image-wrap {
+    max-width: 100%;
+    margin-bottom: 12px;
+  }
+
   .project-image {
-    margin-bottom: 15px;
+    max-width: 160px;
+    max-height: 120px;
+    margin: 0 auto;
   }
 }
