@@ -305,7 +305,8 @@ html[data-theme="light"] .header .profile-content .name {
 
 .top-intro-row .education-sidebar .item .title {
   font-size: 17px;
-  font-weight: 700;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 800;
   line-height: 1.45;
 }
 
@@ -325,7 +326,8 @@ html[data-theme="light"] .header .profile-content .name {
 
 .education-sidebar .item .title {
   font-size: 16px;
-  font-weight: 700;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 800;
   line-height: 1.4;
 }
 
