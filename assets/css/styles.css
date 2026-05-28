@@ -436,13 +436,17 @@ html[data-theme="light"] .header .profile-content .name {
 
 .experience .appointment-heading {
   font-size: 17px;
-  font-weight: 800;
+  font-weight: 900;
 }
 
 .experience .appointment-heading::before {
   content: "\2022";
   color: var(--accent);
   margin-right: 8px;
+}
+
+.experience .item .university {
+  font-size: 13.5px;
 }
 
 .about .content p,
