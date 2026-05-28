@@ -364,27 +364,19 @@ html[data-theme="light"] .header .profile-content .name {
 /* ========================= */
 
 .news-list {
-  list-style: decimal;
-  list-style-position: outside;
-  padding-left: 1.75rem;
+  list-style: none;
+  padding: 0;
   margin: 0;
 }
 
 .news-list li {
-  padding: 14px 0 14px 0.35rem;
-  margin-bottom: 10px;
+  padding: 12px 0;
   border-bottom: 1px solid var(--card-border);
-  line-height: 1.65;
-}
-
-.news-list li::marker {
-  font-weight: 700;
-  color: var(--accent);
+  line-height: 1.6;
 }
 
 .news-list li:last-child {
   border-bottom: none;
-  margin-bottom: 0;
   padding-bottom: 0;
 }
 
@@ -393,11 +385,9 @@ html[data-theme="light"] .header .profile-content .name {
 }
 
 .news-date {
-  display: block;
   font-weight: 700;
-  font-size: 0.92em;
   color: var(--accent);
-  margin-bottom: 4px;
+  white-space: nowrap;
 }
 
 /* ========================= */
