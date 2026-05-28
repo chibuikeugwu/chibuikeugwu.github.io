@@ -15,7 +15,7 @@
 
     <script defer src="assets/fontawesome/js/all.js"></script>
     <link rel="stylesheet" href="assets/plugins/bootstrap/css/bootstrap.min.css">
-    <link id="theme-style" rel="stylesheet" href="assets/css/styles.css?v=9">
+    <link id="theme-style" rel="stylesheet" href="assets/css/styles.css?v=11">
     <script>
         (function () {
             var t = localStorage.getItem("site-theme");
@@ -147,11 +147,14 @@
                                     <div class="project-desc-col">
                                         <div class="desc">
                                             <p>
-                                                I advance conformal prediction-based uncertainty quantification with theoretical
-                                                guarantees for human–ML collaboration, including software prototypes such as
-                                                <a href="https://anonymous.4open.science/r/apr-4C4C/" target="_blank">APR</a>,
-                                                URIC, and Clinician-in-the-Loop Conformal-Calibrated Intervals (CCI) for UTI
-                                                risk detection in smart homes.
+                                                I build conformal prediction methods with coverage guarantees for clinician-in-the-loop
+                                                systems. In <a href="https://ojs.aaai.org/index.php/AAAI/article/view/41490" target="_blank">CCI (AAAI 2026)</a>,
+                                                ambient smart-home sensors predict UTI flare-ups; calibrated intervals support
+                                                three-way decisions (UTI / no UTI / abstain) that nurses found useful in a survey of 42 clinicians.
+                                                <a href="https://dl.acm.org/doi/10.1145/3803409" target="_blank">URIC (ACM HEALTH 2026)</a>
+                                                produces tighter multi-target uncertainty regions for cognitive health from smartwatch data via
+                                                importance-weighted calibration. I also released
+                                                <a href="https://anonymous.4open.science/r/apr-4C4C/" target="_blank">APR</a> for adaptive prediction regions in multi-target regression.
                                             </p>
                                         </div>
                                     </div>
@@ -185,14 +188,16 @@
                                     <div class="project-desc-col">
                                         <div class="desc">
                                             <p>
-                                                I design uncertainty-aware energy management methods for resource-constrained
-                                                wearable IoT devices, using conformal prediction to forecast ambient energy
-                                                harvesting with provable coverage guarantees.
+                                                Wearable IoT devices for health monitoring are limited by small batteries and
+                                                highly uncertain ambient energy harvesting. I develop upper-bound calibrated
+                                                multi-target conformal prediction (UC-MTCP) to forecast future harvest with
+                                                provable coverage, then use those uncertainty regions in lightweight energy
+                                                management that stays within about 2&nbsp;J of an optimal oracle on real user data.
                                                 <br><b>Highlighted papers:</b><br>
-                                                <a href="https://www.ijcai.org/proceedings/2025/1079" target="_blank">
-                                                    Sustainable Wearables for Health Applications (IJCAI 2025)
+                                                <a href="https://dl.acm.org/doi/abs/10.24963/ijcai.2025/1079" target="_blank">
+                                                    Sustainable Wearables (IJCAI 2025)
                                                 </a><br>
-                                                <a href="https://par.nsf.gov/servlets/purl/10599943" target="_blank">
+                                                <a href="https://ieeexplore.ieee.org/abstract/document/11132634" target="_blank">
                                                     Uncertainty-Aware Energy Management for Wearable IoT (DAC 2025)
                                                 </a>
                                             </p>
@@ -241,18 +246,20 @@
 
                             <p class="paper">
                                 <i class="fas fa-newspaper" style="font-size:0.7em;"></i>
-                                <a class="paper-title" href="https://arxiv.org/html/2511.18334v1" target="_blank">
+                                <a class="paper-title" href="https://ojs.aaai.org/index.php/AAAI/article/view/41490" target="_blank">
                                     Clinician-in-the-Loop Smart Home System to Detect Urinary Tract Infection Flare-Ups via Uncertainty-Aware Decision Support
                                 </a>
                                 <span class="paper-authors">
                                     <span class="me">C. E. Ugwu</span>, R. Fritz, D. J. Cook, J. Doppa
                                 </span>
-                                <span class="paper-venue">40th AAAI Conference on Artificial Intelligence (AAAI), 2026</span>
+                                <span class="paper-venue">AAAI Conference on Artificial Intelligence (AAAI), 2026</span>
                             </p>
 
                             <p class="paper">
                                 <i class="fas fa-newspaper" style="font-size:0.7em;"></i>
-                                <span class="paper-title">Importance-Weighted Calibrated Region Prediction of Multi-target Cognitive Health Measures from Smartwatch Sensor Data</span>
+                                <a class="paper-title" href="https://dl.acm.org/doi/10.1145/3803409" target="_blank">
+                                    Importance-Weighted Calibrated Region Prediction of Multi-target Cognitive Health Measures from Smartwatch Sensor Data
+                                </a>
                                 <span class="paper-authors">
                                     <span class="me">C. E. Ugwu</span>, Y. Yan, D. J. Cook, M. Schmitter-Edgecombe, J. Doppa
                                 </span>
@@ -270,7 +277,7 @@
 
                             <p class="paper">
                                 <i class="fas fa-newspaper" style="font-size:0.7em;"></i>
-                                <a class="paper-title" href="https://www.ijcai.org/proceedings/2025/1079" target="_blank">
+                                <a class="paper-title" href="https://dl.acm.org/doi/abs/10.24963/ijcai.2025/1079" target="_blank">
                                     Sustainable Wearables for Health Applications and Beyond via Uncertainty-Aware Energy Management
                                 </a>
                                 <span class="paper-authors">
@@ -281,7 +288,7 @@
 
                             <p class="paper">
                                 <i class="fas fa-newspaper" style="font-size:0.7em;"></i>
-                                <a class="paper-title" href="https://par.nsf.gov/servlets/purl/10599943" target="_blank">
+                                <a class="paper-title" href="https://ieeexplore.ieee.org/abstract/document/11132634" target="_blank">
                                     Uncertainty-Aware Energy Management for Wearable IoT Devices with Conformal Prediction
                                 </a>
                                 <span class="paper-authors">
@@ -292,7 +299,7 @@
 
                             <p class="paper">
                                 <i class="fas fa-newspaper" style="font-size:0.7em;"></i>
-                                <a class="paper-title" href="https://dl.acm.org/doi/10.1145/3760402" target="_blank">
+                                <a class="paper-title" href="https://dl.acm.org/doi/full/10.1145/3760402" target="_blank">
                                     ERGo: Energy-Efficient Hybrid Graph Neural Network Training on Heterogeneous Processing-In-Memory Architecture
                                 </a>
                                 <span class="paper-authors">
@@ -303,33 +310,13 @@
 
                             <p class="paper">
                                 <i class="fas fa-newspaper" style="font-size:0.7em;"></i>
-                                <a class="paper-title" href="https://doi.org/10.1002/qre.3296" target="_blank">
+                                <a class="paper-title" href="https://onlinelibrary.wiley.com/doi/full/10.1002/qre.3405" target="_blank">
                                     Sensitivity and robustness of randomization test and F-test in some experimental designs
                                 </a>
                                 <span class="paper-authors">
                                     A. V. Oladugba, <span class="me">C. E. Ugwu</span>, U. C. Onwuamaeze
                                 </span>
                                 <span class="paper-venue">Quality and Reliability Engineering International, 2023</span>
-                            </p>
-
-                            <h4 class="pub-subheading">Papers Under Review</h4>
-
-                            <p class="paper">
-                                <i class="fas fa-newspaper" style="font-size:0.7em;"></i>
-                                <span class="paper-title">Adaptive Uncertainty-Aware Conformal Regions for Continuous Multi-Target Prediction</span>
-                                <span class="paper-authors">
-                                    <span class="me">C. E. Ugwu</span>, H. Shahrokhi, Y. Yan, D. J. Cook, J. Doppa
-                                </span>
-                                <span class="paper-venue">Transactions on Machine Learning Research (TMLR), 2026</span>
-                            </p>
-
-                            <p class="paper">
-                                <i class="fas fa-newspaper" style="font-size:0.7em;"></i>
-                                <span class="paper-title">Controlling Coverage for Batch Evaluation via Vanilla Conformal Prediction</span>
-                                <span class="paper-authors">
-                                    <span class="me">C. E. Ugwu*</span>, H. Shahrokhi*, Y. Yan, J. Doppa
-                                </span>
-                                <span class="paper-venue">SIAM International Conference on Data Mining (SDM), 2026 · (* equal contribution)</span>
                             </p>
 
                         </div>
@@ -341,32 +328,130 @@
                 <div class="col-12" style="margin-top:20px;">
                     <aside class="list awards aside section" id="awards">
                         <div class="section-inner shadow-sm rounded">
-                            <h2 class="heading">Awards</h2>
-                            <div class="content">
-                                <ul class="list-unstyled" style="margin-bottom:0;">
+                            <h2 class="heading">Awards and Honors</h2>
+                            <div class="content cv-block">
 
-                                    <h4 class="university" style="font-size:16px;">2026</h4>
-                                    <li style="font-size:14px;"><i class="fa fa-award"></i> Overall Outstanding Research Assistant, <a href="https://vcea.wsu.edu/" target="_blank">VCEA</a></li>
-                                    <li style="font-size:14px;"><i class="fa fa-award"></i> Outstanding Research Assistant in Computer Science, <a href="https://eecs.wsu.edu/" target="_blank">EECS</a></li>
-                                    <li style="font-size:14px;"><i class="fa fa-award"></i> GPSA Research Assistant of the Year Award</li>
-                                    <li style="font-size:14px;"><i class="fa fa-award"></i> AAAI Student Scholarship and Volunteer Program</li>
+                                <div class="cv-entry">
+                                    <i class="fa fa-trophy cv-icon"></i>
+                                    <div class="cv-entry-body">
+                                        <div class="cv-entry-line">
+                                            <strong>Overall Outstanding Research Assistant <a href="https://vcea.wsu.edu/" target="_blank">VCEA</a></strong>
+                                            <span class="cv-year">2026</span>
+                                        </div>
+                                        <div class="cv-sub">Voiland College of Engineering, Washington State University</div>
+                                    </div>
+                                </div>
 
-                                    <h4 class="university" style="font-size:16px; margin-top:12px;">2025</h4>
-                                    <li style="font-size:14px;"><i class="fa fa-award"></i> Mahmoud M. Dillsi Graduate Fellowship, EECS</li>
+                                <div class="cv-entry">
+                                    <i class="fa fa-trophy cv-icon"></i>
+                                    <div class="cv-entry-body">
+                                        <div class="cv-entry-line">
+                                            <strong>Outstanding Research Assistant in Computer Science <a href="https://eecs.wsu.edu/" target="_blank">EECS</a> Award</strong>
+                                            <span class="cv-year">2026</span>
+                                        </div>
+                                        <div class="cv-sub">Voiland College of Engineering, Washington State University</div>
+                                    </div>
+                                </div>
 
-                                    <h4 class="university" style="font-size:16px; margin-top:12px;">2024</h4>
-                                    <li style="font-size:14px;"><i class="fa fa-award"></i> Nakahara Tsuyoshi and Mary Fellowship, EECS</li>
-                                    <li style="font-size:14px;"><i class="fa fa-award"></i> Outstanding Graduate Teaching Assistant in <a href="https://eecs.wsu.edu/" target="_blank">EECS</a>, <a href="https://vcea.wsu.edu/" target="_blank">VCEA</a></li>
+                                <div class="cv-entry">
+                                    <i class="fa fa-trophy cv-icon"></i>
+                                    <div class="cv-entry-body">
+                                        <div class="cv-entry-line">
+                                            <strong>GPSA Research Assistant of the Year Award</strong>
+                                            <span class="cv-year">2026</span>
+                                        </div>
+                                        <div class="cv-sub">Graduate and Professional Student Association (GPSA), Washington State University</div>
+                                    </div>
+                                </div>
 
-                                    <h4 class="university" style="font-size:16px; margin-top:12px;">2022</h4>
-                                    <li style="font-size:14px;"><i class="fa fa-award"></i> EducationUSA Opportunity Fund Program Scholar (Abuja, Nigeria)</li>
+                                <div class="cv-entry">
+                                    <i class="fa fa-trophy cv-icon"></i>
+                                    <div class="cv-entry-body">
+                                        <div class="cv-entry-line">
+                                            <strong>AAAI Student Scholarship and Volunteer Program</strong>
+                                            <span class="cv-year">2026</span>
+                                        </div>
+                                        <div class="cv-sub">Association for the Advancement of Artificial Intelligence Conference</div>
+                                    </div>
+                                </div>
 
-                                    <h4 class="university" style="font-size:16px; margin-top:12px;">2018</h4>
-                                    <li style="font-size:14px;"><i class="fa fa-award"></i> Best Graduating Student — Statistics Department, University of Nigeria</li>
-                                    <li style="font-size:14px;"><i class="fa fa-award"></i> <a href="https://www.vanguardngr.com/2018/05/unn-wins-nmc-nsa-competition-for-universities/" target="_blank">Winner: Nigerian Statistical Association competition</a> (University of Nigeria representative)</li>
-                                    <li style="font-size:14px;"><i class="fa fa-award"></i> <a href="https://www.vanguardngr.com/2018/05/unn-wins-nmc-nsa-competition-for-universities/" target="_blank">Gold medalist: NSA competition individual category</a></li>
+                                <div class="cv-entry">
+                                    <i class="fa fa-trophy cv-icon"></i>
+                                    <div class="cv-entry-body">
+                                        <div class="cv-entry-line">
+                                            <strong>Mahmoud M. Dillsi Family Graduate Fellowship</strong>
+                                            <span class="cv-year">2025</span>
+                                        </div>
+                                        <div class="cv-sub">School of Electrical Engineering and Computer Science, Washington State University</div>
+                                    </div>
+                                </div>
 
-                                </ul>
+                                <div class="cv-entry">
+                                    <i class="fa fa-trophy cv-icon"></i>
+                                    <div class="cv-entry-body">
+                                        <div class="cv-entry-line">
+                                            <strong>Nakahara Tsuyoshi and Mary Fellowship</strong>
+                                            <span class="cv-year">2024</span>
+                                        </div>
+                                        <div class="cv-sub">School of Electrical Engineering and Computer Science, Washington State University</div>
+                                    </div>
+                                </div>
+
+                                <div class="cv-entry">
+                                    <i class="fa fa-trophy cv-icon"></i>
+                                    <div class="cv-entry-body">
+                                        <div class="cv-entry-line">
+                                            <strong>Outstanding Graduate Teaching Assistant in <a href="https://eecs.wsu.edu/" target="_blank">EECS</a> Award</strong>
+                                            <span class="cv-year">2024</span>
+                                        </div>
+                                        <div class="cv-sub">Voiland College of Engineering, Washington State University</div>
+                                    </div>
+                                </div>
+
+                                <div class="cv-entry">
+                                    <i class="fa fa-trophy cv-icon"></i>
+                                    <div class="cv-entry-body">
+                                        <div class="cv-entry-line">
+                                            <strong>EducationUSA Opportunity Fund Program (OFP) Scholar</strong>
+                                            <span class="cv-year">2022</span>
+                                        </div>
+                                        <div class="cv-sub">USA Embassy, Abuja, Nigeria</div>
+                                    </div>
+                                </div>
+
+                                <div class="cv-entry">
+                                    <i class="fa fa-trophy cv-icon"></i>
+                                    <div class="cv-entry-body">
+                                        <div class="cv-entry-line">
+                                            <strong>Best Graduating Student</strong>
+                                            <span class="cv-year">2018</span>
+                                        </div>
+                                        <div class="cv-sub">Statistics Department — University of Nigeria</div>
+                                    </div>
+                                </div>
+
+                                <div class="cv-entry">
+                                    <i class="fa fa-trophy cv-icon"></i>
+                                    <div class="cv-entry-body">
+                                        <div class="cv-entry-line">
+                                            <strong><a href="https://www.vanguardngr.com/2018/05/unn-wins-nmc-nsa-competition-for-universities/" target="_blank">Winner: Nigerian Statistical Association (NSA) competition for undergraduates</a></strong>
+                                            <span class="cv-year">2018</span>
+                                        </div>
+                                        <div class="cv-sub">Representative of the University of Nigeria</div>
+                                    </div>
+                                </div>
+
+                                <div class="cv-entry">
+                                    <i class="fa fa-trophy cv-icon"></i>
+                                    <div class="cv-entry-body">
+                                        <div class="cv-entry-line">
+                                            <strong><a href="https://www.vanguardngr.com/2018/05/unn-wins-nmc-nsa-competition-for-universities/" target="_blank">Gold medalist: NSA competition individual category</a></strong>
+                                            <span class="cv-year">2018</span>
+                                        </div>
+                                        <div class="cv-sub">Representative of the University of Nigeria</div>
+                                    </div>
+                                </div>
+
                             </div>
                         </div>
                     </aside>
@@ -410,31 +495,40 @@
                 <div class="col-12" style="margin-top:20px;">
                     <section class="experience section" id="service">
                         <div class="section-inner shadow-sm rounded">
-                            <h2 class="heading">Service</h2>
-                            <div class="content">
-                                <h4 class="pub-subheading" style="margin-top:0;">Program Committee Member</h4>
-                                <ul class="service-list">
-                                    <li>International Conference on Machine Learning (ICML) — 2026, 2025</li>
-                                    <li>International Conference on Uncertainty in Artificial Intelligence (UAI) — 2026</li>
-                                    <li>International Conference on Learning Representations (ICLR) — 2026</li>
-                                    <li>AAAI Conference on Artificial Intelligence — 2026, 2025</li>
-                                    <li>AAAI AI for Social Impact (AISI) — 2026, 2025, 2024</li>
-                                    <li>AAAI AI for Innovative Applications (IAAI) — 2026</li>
-                                </ul>
-                                <h4 class="pub-subheading">Conference Reviewer</h4>
-                                <ul class="service-list">
-                                    <li>NeurIPS — 2025</li>
-                                    <li>IJCAI — 2025</li>
-                                </ul>
-                                <h4 class="pub-subheading">Volunteer and Outreach</h4>
-                                <ul class="service-list">
-                                    <li>AAAI — Volunteer, 2026</li>
-                                    <li>IJCAI — Volunteer, 2025</li>
-                                    <li>Digital AgAthon (AgAID Institute) — Mentor and Judge, 2025</li>
-                                    <li>WSU Summer Programming Camp — Instructor, 2025</li>
-                                    <li>SURCA — Judge, 2026</li>
-                                    <li>CrimsonCode Hackathon — Judge, 2026</li>
-                                </ul>
+                            <h2 class="heading">Professional Services and Outreach Activities</h2>
+                            <div class="content cv-block">
+
+                                <h4 class="cv-subheading">Conference Activities</h4>
+                                <ol class="cv-enum">
+                                    <li>AAAI Conference on Artificial Intelligence <strong>(AAAI)</strong> <span class="cv-year-inline">2026</span></li>
+                                    <li>Annual Conference on Neural Information Processing Systems <strong>(NeurIPS)</strong> <span class="cv-year-inline">2025</span></li>
+                                    <li>International Joint Conference on Artificial Intelligence <strong>(IJCAI)</strong> <span class="cv-year-inline">2025</span></li>
+                                </ol>
+
+                                <h4 class="cv-subheading">Program Committee Member</h4>
+                                <ol class="cv-enum">
+                                    <li>International Conference on Machine Learning <strong>(ICML)</strong> <span class="cv-year-inline">2026</span></li>
+                                    <li>International Conference on Uncertainty in Artificial Intelligence <strong>(UAI)</strong> <span class="cv-year-inline">2026</span></li>
+                                    <li>International Conference on Learning Representations <strong>(ICLR)</strong> <span class="cv-year-inline">2026</span></li>
+                                    <li>Association for the Advancement of Artificial Intelligence <strong>(AAAI)</strong> <span class="cv-year-inline">2026</span></li>
+                                    <li>AAAI Conference on Artificial Intelligence, AI for Social Impact Track <strong>(AISI)</strong> <span class="cv-year-inline">2026</span></li>
+                                    <li>AAAI Conference on Artificial Intelligence, AI for Innovative Applications <strong>(IAAI)</strong> <span class="cv-year-inline">2026</span></li>
+                                    <li>International Conference of Machine Learning <strong>(ICML)</strong> <span class="cv-year-inline">2025</span></li>
+                                    <li>Association for the Advancement of Artificial Intelligence <strong>(AAAI)</strong> <span class="cv-year-inline">2025</span></li>
+                                    <li>AAAI Conference on Artificial Intelligence, AI for Social Impact Track <strong>(AISI)</strong> <span class="cv-year-inline">2025</span></li>
+                                    <li>AAAI Conference on Artificial Intelligence, AI for Social Impact Track <strong>(AISI)</strong> <span class="cv-year-inline">2024</span></li>
+                                </ol>
+
+                                <h4 class="cv-subheading">Volunteer and Outreach Activities</h4>
+                                <ol class="cv-enum">
+                                    <li>Volunteer for AAAI Conference on Artificial Intelligence (AAAI), <span class="cv-year-inline">2026</span></li>
+                                    <li>Volunteer for International Joint Conference on Artificial Intelligence (IJCAI), <span class="cv-year-inline">2025</span></li>
+                                    <li>Mentor and Judge for Digital AgAthon (AgAID Institute), <span class="cv-year-inline">2025</span></li>
+                                    <li>Instructor for WSU Summer Programming Camp for Middle Schoolers, <span class="cv-year-inline">2025</span></li>
+                                    <li>Judge for Showcase for Undergraduate Research and Creative Activities (SURCA), <span class="cv-year-inline">2026</span></li>
+                                    <li>Judge for ACM Club's CrimsonCode Hackathon, <span class="cv-year-inline">2026</span></li>
+                                </ol>
+
                             </div>
                         </div>
                     </section>

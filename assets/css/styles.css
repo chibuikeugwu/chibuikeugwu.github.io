@@ -28,6 +28,12 @@ html[data-theme="dark"] {
   --btn-bg-hover: #4d8579;
   --shadow: rgba(0, 0, 0, 0.35);
   --header-inset: rgba(255, 255, 255, 0.04);
+  --header-overlay: linear-gradient(
+    135deg,
+    rgba(8, 18, 22, 0.9) 0%,
+    rgba(12, 32, 28, 0.82) 45%,
+    rgba(10, 16, 26, 0.92) 100%
+  );
 }
 
 /* ========================= */
@@ -55,6 +61,12 @@ html[data-theme="light"] {
   --btn-bg-hover: #1f6358;
   --shadow: rgba(26, 40, 50, 0.12);
   --header-inset: rgba(255, 255, 255, 0.6);
+  --header-overlay: linear-gradient(
+    135deg,
+    rgba(236, 244, 248, 0.9) 0%,
+    rgba(220, 235, 230, 0.85) 50%,
+    rgba(232, 240, 245, 0.92) 100%
+  );
 }
 
 /* ========================= */
@@ -99,16 +111,39 @@ a:hover {
 /* ========================= */
 
 .header {
+  position: relative;
   margin: 16px 16px 30px 16px;
   padding: 22px 30px;
-  background: linear-gradient(180deg, var(--header-bg-start) 0%, var(--header-bg-end) 100%);
   border-radius: 14px;
   border: 1px solid var(--card-border);
   box-shadow:
     0 0 0 1px var(--header-inset) inset,
     0 6px 18px var(--shadow),
     0 1px 0 var(--header-inset);
-  transition: background 0.35s ease, border-color 0.35s ease;
+  background-color: var(--header-bg-end);
+  background-image: var(--header-overlay), url('../images/header-nature.jpg');
+  background-size: cover;
+  background-position: center 40%;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  transition: border-color 0.35s ease, box-shadow 0.35s ease;
+}
+
+.header .container {
+  position: relative;
+  z-index: 1;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.header .profile-image {
+  border: 3px solid rgba(255, 255, 255, 0.15);
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.35);
+}
+
+html[data-theme="light"] .header .profile-image {
+  border-color: rgba(255, 255, 255, 0.65);
+  box-shadow: 0 4px 12px rgba(26, 40, 50, 0.15);
 }
 
 .header .row {
@@ -132,6 +167,11 @@ a:hover {
   color: var(--primary-text);
   font-size: 28px;
   margin-bottom: 2px;
+  text-shadow: 0 1px 4px rgba(0, 0, 0, 0.45);
+}
+
+html[data-theme="light"] .header .profile-content .name {
+  text-shadow: 0 1px 2px rgba(255, 255, 255, 0.8);
 }
 
 .header .profile-content .desc {
@@ -153,11 +193,6 @@ a:hover {
 .header .profile-content .social a:hover {
   background: var(--accent);
   color: #fff;
-}
-
-.header .container {
-  padding-left: 30px;
-  padding-right: 30px;
 }
 
 .header-nav ul {
@@ -489,6 +524,80 @@ a:hover {
   position: absolute;
   left: 0;
   color: var(--accent);
+}
+
+/* CV-style awards & service */
+.cv-block {
+  margin-top: 0;
+}
+
+.cv-entry {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 14px;
+  align-items: flex-start;
+}
+
+.cv-icon {
+  color: var(--accent);
+  margin-top: 3px;
+  flex-shrink: 0;
+}
+
+.cv-entry-body {
+  flex: 1;
+  min-width: 0;
+}
+
+.cv-entry-line {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.cv-entry-line strong {
+  font-weight: 600;
+  color: var(--primary-text);
+}
+
+.cv-year,
+.cv-year-inline {
+  color: var(--secondary-text);
+  font-weight: 500;
+  white-space: nowrap;
+}
+
+.cv-sub {
+  font-size: 13.5px;
+  color: var(--secondary-text);
+  font-style: italic;
+  margin-top: 3px;
+  padding-left: 0;
+}
+
+.cv-subheading {
+  font-size: 1rem;
+  font-weight: 700;
+  margin: 1.25rem 0 0.5rem;
+  color: var(--primary-text);
+}
+
+.cv-subheading:first-child {
+  margin-top: 0;
+}
+
+.cv-enum {
+  margin: 0 0 0.5rem 0;
+  padding-left: 1.35rem;
+}
+
+.cv-enum li {
+  font-size: 14.5px;
+  line-height: 1.55;
+  margin-bottom: 6px;
+  color: var(--primary-text);
 }
 
 /* ========================= */
