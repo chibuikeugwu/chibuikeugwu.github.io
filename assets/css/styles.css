@@ -165,7 +165,7 @@ html[data-theme="light"] .header .profile-image {
 
 .header .profile-content .name {
   color: var(--primary-text);
-  font-size: 28px;
+  font-size: 34px;
   margin-bottom: 2px;
   text-shadow: 0 1px 4px rgba(0, 0, 0, 0.45);
 }
@@ -186,8 +186,22 @@ html[data-theme="light"] .header .profile-content .name {
 }
 
 .header .profile-content .social a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
   background: var(--social-bg);
   color: var(--primary-text);
+  font-size: 1.15rem;
+  text-decoration: none;
+  transition: background 0.25s ease, color 0.25s ease;
+}
+
+.header .profile-content .social a i {
+  font-size: 1.15rem;
+  line-height: 1;
 }
 
 .header .profile-content .social a:hover {
