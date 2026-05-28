@@ -204,6 +204,11 @@ html[data-theme="light"] .header .profile-content .name {
   line-height: 1;
 }
 
+.header .profile-content .social a .fa-linkedin-in,
+.header .profile-content .social a .fa-orcid {
+  font-size: 1.25rem;
+}
+
 .header .profile-content .social a:hover {
   background: var(--accent);
   color: #fff;
