@@ -331,6 +331,11 @@ html[data-theme="light"] .header .profile-content .name {
   line-height: 1.4;
 }
 
+.education-sidebar .item .title .education-honor {
+  font-family: "Lato", "Roboto", sans-serif;
+  font-weight: 400;
+}
+
 .education-sidebar .item .university {
   font-size: 13.5px;
   color: var(--secondary-text);
