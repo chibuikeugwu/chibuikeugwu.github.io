@@ -268,6 +268,33 @@ html[data-theme="light"] .header .profile-content .name {
   margin-bottom: 15px;
 }
 
+/* Slightly larger type for About + Education (readability in light/dark) */
+.top-intro-row .section .heading {
+  font-size: 1.48rem;
+}
+
+.top-intro-row .about .content p,
+.top-intro-row .about .content li {
+  font-size: 17px;
+  line-height: 1.68;
+  color: var(--primary-text);
+}
+
+.top-intro-row .education-sidebar .heading {
+  font-size: 1.38rem;
+}
+
+.top-intro-row .education-sidebar .item .title {
+  font-size: 16px;
+  line-height: 1.45;
+}
+
+.top-intro-row .education-sidebar .item .university {
+  font-size: 14.5px;
+  line-height: 1.5;
+  color: var(--secondary-text);
+}
+
 .education-sidebar .item {
   margin-bottom: 14px;
 }
@@ -643,6 +670,14 @@ html[data-theme="light"] .header .profile-content .name {
 /* ========================= */
 
 @media (max-width: 991.98px) {
+  .top-intro-row .education-sidebar .item .title {
+    font-size: 16.5px;
+  }
+
+  .top-intro-row .education-sidebar .item .university {
+    font-size: 15px;
+  }
+
   .education-sidebar .item .title {
     font-size: 16px;
   }
