@@ -493,9 +493,9 @@ html[data-theme="light"] .header .profile-content .name {
 
 #projects .project-image {
   display: block;
-  width: 100%;
+  width: 80%;
   height: auto;
-  margin: 0;
+  margin: 0 auto;
   border-radius: 8px;
   border: 1px solid var(--card-border);
   background: var(--bg-0);
