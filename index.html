@@ -17,7 +17,7 @@
 
     <script defer src="assets/fontawesome/js/all.js"></script>
     <link rel="stylesheet" href="assets/plugins/bootstrap/css/bootstrap.min.css">
-    <link id="theme-style" rel="stylesheet" href="assets/css/styles.css?v=26">
+    <link id="theme-style" rel="stylesheet" href="assets/css/styles.css?v=27">
     <script>
         (function () {
             var t = localStorage.getItem("site-theme");
@@ -139,99 +139,72 @@
                 <section id="projects" class="latest section">
                     <div class="section-inner shadow-sm rounded">
                         <h2 class="heading">Projects</h2>
-                        <div class="content">
-                            <div class="project-row">
-                                <div class="project-body">
-                                    <div class="project-image-wrap">
-                                        <img class="project-image" src="images/CP_for_UQ.png"
-                                            alt="Conformal prediction for uncertainty quantification" />
-                                    </div>
-                                    <div class="project-desc-col">
-                                        <div class="desc">
-                                            <p>
-                                                I develop uncertainty quantification methods for safety-sensitive prediction tasks,
-                                                especially in healthcare. My work uses statistical frameworks such as conformal prediction
-                                                to produce reliable prediction intervals and regions with formal coverage guarantees. In
-                                                <a href="https://ojs.aaai.org/index.php/AAAI/article/view/41490" target="_blank">
-                                                    Clinician-in-the-Loop Smart Home System to Detect Urinary Tract Infection Flare-Ups via Uncertainty-Aware Decision Support
-                                                </a>,
-                                                we use ambient smart-home sensor data to detect urinary tract infection flare-ups and
-                                                produce conformal-calibrated intervals that support three-way decisions: infection,
-                                                no infection, or abstention when the model is uncertain. In
-                                                <a href="https://dl.acm.org/doi/10.1145/3803409" target="_blank">
-                                                    Conformalized Uncertainty Regions for Machine Learning-Based Multiple Cognitive Health Measures from Smartwatch Sensor Data
-                                                </a>,
-                                                we construct importance-weighted calibrated prediction regions for multiple cognitive
-                                                health outcomes using smartwatch sensor data. I also developed
-                                                <a href="https://anonymous.4open.science/r/apr-4C4C/" target="_blank">
-                                                    Adaptive Prediction Regions
-                                                </a>,
-                                                a conformal prediction-based method for multi-target regression that produces
-                                                input-dependent uncertainty regions.
-                                            </p>
-                                        </div>
-                                    </div>
+                        <div class="content projects-unified">
+                            <div class="projects-hero">
+                                <img class="projects-hero-image" src="images/full_research.png"
+                                    alt="Overview of research on uncertainty quantification, trustworthy LLMs, RLHF, and wearable IoT" />
+                            </div>
+
+                            <div class="project-part">
+                                <div class="desc">
+                                    <p>
+                                        I develop uncertainty quantification methods for safety-sensitive prediction tasks,
+                                        especially in healthcare. My work uses statistical frameworks such as conformal prediction
+                                        to produce reliable prediction intervals and regions with formal coverage guarantees. In
+                                        <a href="https://ojs.aaai.org/index.php/AAAI/article/view/41490" target="_blank">
+                                            Clinician-in-the-Loop Smart Home System to Detect Urinary Tract Infection Flare-Ups via Uncertainty-Aware Decision Support
+                                        </a>,
+                                        we use ambient smart-home sensor data to detect urinary tract infection flare-ups and
+                                        produce conformal-calibrated intervals that support three-way decisions: infection,
+                                        no infection, or abstention when the model is uncertain. In
+                                        <a href="https://dl.acm.org/doi/10.1145/3803409" target="_blank">
+                                            Conformalized Uncertainty Regions for Machine Learning-Based Multiple Cognitive Health Measures from Smartwatch Sensor Data
+                                        </a>,
+                                        we construct importance-weighted calibrated prediction regions for multiple cognitive
+                                        health outcomes using smartwatch sensor data. I also developed
+                                        <a href="https://anonymous.4open.science/r/apr-4C4C/" target="_blank">
+                                            Adaptive Prediction Regions
+                                        </a>,
+                                        a conformal prediction-based method for multi-target regression that produces
+                                        input-dependent uncertainty regions.
+                                    </p>
                                 </div>
                             </div>
 
-                            <div class="project-row">
-                                <div class="project-body">
-                                    <div class="project-image-wrap">
-                                        <img class="project-image" src="images/LLM_Hallucination.png"
-                                            alt="LLM hallucination control" />
-                                    </div>
-                                    <div class="project-desc-col">
-                                        <div class="desc">
-                                            <p>
-                                                I work on developing uncertainty-based methods to make large language models more trustworthy in safety-sensitive settings. My ongoing projects focuses on hallucination control policies that detect unsupported claims, quantify model uncertainty, verify responses against available evidence, and abstain when confidence is insufficient. The goal is to produce large language model systems that either provide evidence-aligned responses or defer to human expertise when the model cannot answer safely.
-                                            </p>
-                                        </div>
-                                    </div>
+                            <div class="project-part">
+                                <div class="desc">
+                                    <p>
+                                        I work on developing uncertainty-based methods to make large language models more trustworthy in safety-sensitive settings. My ongoing projects focuses on hallucination control policies that detect unsupported claims, quantify model uncertainty, verify responses against available evidence, and abstain when confidence is insufficient. The goal is to produce large language model systems that either provide evidence-aligned responses or defer to human expertise when the model cannot answer safely.
+                                    </p>
                                 </div>
                             </div>
 
-                            <div class="project-row">
-                                <div class="project-body">
-                                    <div class="project-image-wrap">
-                                        <img class="project-image" src="images/RLHF.png"
-                                            alt="Uncertainty-aware reinforcement learning from human feedback for clinical forecasting" />
-                                    </div>
-                                    <div class="project-desc-col">
-                                        <div class="desc">
-                                            <p>
-                                                I am developing an uncertainty-aware reinforcement learning from human feedback system
-                                                for clinician-facing health forecasting from continuous sensor data. The system combines
-                                                recent patient behavioral markers, clinician prompts, a supervised fine-tuned language
-                                                model, and conformal prediction to generate short clinical summaries with calibrated
-                                                uncertainty.
-                                            </p>
-                                            <p>
-                                                Clinician or artificial-nurse feedback is collected on reliability, understandability,
-                                                and usability, then converted into reward signals that guide model updates. The goal is
-                                                to produce clinical artificial intelligence outputs that are accurate, uncertainty-aware,
-                                                actionable, and better aligned with human expert judgment.
-                                            </p>
-                                        </div>
-                                    </div>
+                            <div class="project-part">
+                                <div class="desc">
+                                    <p>
+                                        I am developing an uncertainty-aware reinforcement learning from human feedback system
+                                        for clinician-facing health forecasting from continuous sensor data. The system combines
+                                        recent patient behavioral markers, clinician prompts, a supervised fine-tuned language
+                                        model, and conformal prediction to generate short clinical summaries with calibrated
+                                        uncertainty.
+                                    </p>
+                                    <p>
+                                        Clinician or artificial-nurse feedback is collected on reliability, understandability,
+                                        and usability, then converted into reward signals that guide model updates. The goal is
+                                        to produce clinical artificial intelligence outputs that are accurate, uncertainty-aware,
+                                        actionable, and better aligned with human expert judgment.
+                                    </p>
                                 </div>
                             </div>
 
-                            <div class="project-row">
-                                <div class="project-body">
-                                    <div class="project-image-wrap">
-                                        <img class="project-image" src="images/wearable_IoT.png"
-                                            alt="Wearable IoT energy management" />
-                                    </div>
-                                    <div class="project-desc-col">
-                                        <div class="desc">
-                                            <p>
-                                                My work also involves developing uncertainty-aware energy management methods for wearable Internet of Things devices used in continuous health monitoring. These devices must operate under limited battery capacity and uncertain energy harvesting from sources such as motion, heat, or solar exposure. My work uses upper-bound calibrated multi-target conformal prediction to forecast future energy harvest with coverage guarantees, then allocates energy efficiently so the device can preserve battery life and avoid running out of charge while maintaining reliable sensing and inference.
-                                                <br><b>Highlighted papers:</b><br>
-                                                <a href="https://dl.acm.org/doi/abs/10.24963/ijcai.2025/1079" target="_blank">Sustainable Wearables for Health Applications and Beyond via Uncertainty-Aware Energy Management</a><br>
-                                                <a href="https://ieeexplore.ieee.org/abstract/document/11132634" target="_blank">Uncertainty-Aware Energy Management for Wearable Internet of Things Devices with Conformal Prediction</a>
-                                            </p>
-                                        </div>
-                                    </div>
+                            <div class="project-part">
+                                <div class="desc">
+                                    <p>
+                                        My work also involves developing uncertainty-aware energy management methods for wearable Internet of Things devices used in continuous health monitoring. These devices must operate under limited battery capacity and uncertain energy harvesting from sources such as motion, heat, or solar exposure. My work uses upper-bound calibrated multi-target conformal prediction to forecast future energy harvest with coverage guarantees, then allocates energy efficiently so the device can preserve battery life and avoid running out of charge while maintaining reliable sensing and inference.
+                                        <br><b>Highlighted papers:</b><br>
+                                        <a href="https://dl.acm.org/doi/abs/10.24963/ijcai.2025/1079" target="_blank">Sustainable Wearables for Health Applications and Beyond via Uncertainty-Aware Energy Management</a><br>
+                                        <a href="https://ieeexplore.ieee.org/abstract/document/11132634" target="_blank">Uncertainty-Aware Energy Management for Wearable Internet of Things Devices with Conformal Prediction</a>
+                                    </p>
                                 </div>
                             </div>
                         </div>

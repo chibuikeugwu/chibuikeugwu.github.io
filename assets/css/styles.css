@@ -456,82 +456,45 @@ html[data-theme="light"] .header .profile-content .name {
 }
 
 /* ========================= */
-/* PROJECTS — 50% image | 50% text */
+/* PROJECTS — unified image + text parts */
 /* ========================= */
 
-#projects .project-row {
-  margin-bottom: 2rem;
-  padding-bottom: 2rem;
-  border-bottom: 1px solid var(--card-border);
-}
-
-#projects .project-row:last-child {
-  margin-bottom: 0;
-  padding-bottom: 0;
-  border-bottom: none;
-}
-
-#projects .project-body {
-  display: flex;
-  flex-wrap: nowrap;
-  align-items: center;
-  gap: 1.25rem;
-  width: 100%;
-}
-
-/* Wrapper has no box — border hugs the image only */
-#projects .project-image-wrap {
-  flex: 0 0 50%;
-  width: 50%;
-  max-width: 50%;
-  padding: 0;
-  margin: 0;
-  border: none;
-  background: none;
+#projects .projects-hero {
+  margin-bottom: 1.75rem;
   line-height: 0;
 }
 
-#projects .project-image {
+#projects .projects-hero-image {
   display: block;
   width: 100%;
   height: auto;
-  margin: 0;
   border-radius: 8px;
   border: 1px solid var(--card-border);
   background: var(--bg-0);
   box-sizing: border-box;
 }
 
-#projects .project-desc-col {
-  flex: 0 0 50%;
-  width: 50%;
-  max-width: 50%;
-  display: flex;
-  align-items: center;
+#projects .project-part {
+  padding: 1.25rem 0;
+  border-bottom: 1px solid var(--card-border);
 }
 
-#projects .project-desc-col .desc {
-  width: 100%;
+#projects .project-part:first-of-type {
+  padding-top: 0;
 }
 
-#projects .project-desc-col .desc p {
-  margin: 0;
+#projects .project-part:last-child {
+  padding-bottom: 0;
+  border-bottom: none;
+}
+
+#projects .project-part .desc p {
+  margin: 0 0 0.85rem;
   line-height: 1.6;
 }
 
-@media (max-width: 767.98px) {
-  #projects .project-body {
-    flex-direction: column;
-    align-items: stretch;
-  }
-
-  #projects .project-image-wrap,
-  #projects .project-desc-col {
-    flex: 0 0 100%;
-    width: 100%;
-    max-width: 100%;
-  }
-
+#projects .project-part .desc p:last-child {
+  margin-bottom: 0;
 }
 
 /* ========================= */
@@ -755,14 +718,5 @@ html[data-theme="light"] .header .profile-content .name {
 
   .header-nav li {
     margin: 4px 8px;
-  }
-
-  .project-image-wrap {
-    margin-bottom: 14px;
-    padding-right: 0;
-  }
-
-  .project-desc-col {
-    padding-left: 0;
   }
 }
