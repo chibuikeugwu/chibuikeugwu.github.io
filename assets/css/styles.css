@@ -466,21 +466,36 @@ html[data-theme="light"] .header .profile-content .name {
 
 #projects .projects-hero-image {
   display: block;
-  width: 100%;
+  width: 75%;
   height: auto;
+  margin: 0 auto;
   border-radius: 8px;
   border: 1px solid var(--card-border);
   background: var(--bg-0);
   box-sizing: border-box;
 }
 
+#projects .project-parts-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
 #projects .project-part {
-  padding: 1.25rem 0;
+  position: relative;
+  padding: 0.9rem 0 0.9rem 1.35rem;
   border-bottom: 1px solid var(--card-border);
 }
 
-#projects .project-part:first-of-type {
-  padding-top: 0;
+#projects .project-part::before {
+  content: "\2022";
+  position: absolute;
+  left: 0;
+  top: 0.95rem;
+  color: var(--accent);
+  font-size: 1.15em;
+  font-weight: 700;
+  line-height: 1;
 }
 
 #projects .project-part:last-child {
@@ -489,12 +504,8 @@ html[data-theme="light"] .header .profile-content .name {
 }
 
 #projects .project-part .desc p {
-  margin: 0 0 0.85rem;
+  margin: 0;
   line-height: 1.6;
-}
-
-#projects .project-part .desc p:last-child {
-  margin-bottom: 0;
 }
 
 /* ========================= */

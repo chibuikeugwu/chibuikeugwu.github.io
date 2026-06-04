@@ -17,7 +17,7 @@
 
     <script defer src="assets/fontawesome/js/all.js"></script>
     <link rel="stylesheet" href="assets/plugins/bootstrap/css/bootstrap.min.css">
-    <link id="theme-style" rel="stylesheet" href="assets/css/styles.css?v=27">
+    <link id="theme-style" rel="stylesheet" href="assets/css/styles.css?v=28">
     <script>
         (function () {
             var t = localStorage.getItem("site-theme");
@@ -145,68 +145,53 @@
                                     alt="Overview of research on uncertainty quantification, trustworthy LLMs, RLHF, and wearable IoT" />
                             </div>
 
-                            <div class="project-part">
-                                <div class="desc">
-                                    <p>
-                                        I develop uncertainty quantification methods for safety-sensitive prediction tasks,
-                                        especially in healthcare. My work uses statistical frameworks such as conformal prediction
-                                        to produce reliable prediction intervals and regions with formal coverage guarantees. In
-                                        <a href="https://ojs.aaai.org/index.php/AAAI/article/view/41490" target="_blank">
-                                            Clinician-in-the-Loop Smart Home System to Detect Urinary Tract Infection Flare-Ups via Uncertainty-Aware Decision Support
-                                        </a>,
-                                        we use ambient smart-home sensor data to detect urinary tract infection flare-ups and
-                                        produce conformal-calibrated intervals that support three-way decisions: infection,
-                                        no infection, or abstention when the model is uncertain. In
-                                        <a href="https://dl.acm.org/doi/10.1145/3803409" target="_blank">
-                                            Conformalized Uncertainty Regions for Machine Learning-Based Multiple Cognitive Health Measures from Smartwatch Sensor Data
-                                        </a>,
-                                        we construct importance-weighted calibrated prediction regions for multiple cognitive
-                                        health outcomes using smartwatch sensor data. I also developed
-                                        <a href="https://anonymous.4open.science/r/apr-4C4C/" target="_blank">
-                                            Adaptive Prediction Regions
-                                        </a>,
-                                        a conformal prediction-based method for multi-target regression that produces
-                                        input-dependent uncertainty regions.
-                                    </p>
-                                </div>
-                            </div>
-
-                            <div class="project-part">
-                                <div class="desc">
-                                    <p>
-                                        I work on developing uncertainty-based methods to make large language models more trustworthy in safety-sensitive settings. My ongoing projects focuses on hallucination control policies that detect unsupported claims, quantify model uncertainty, verify responses against available evidence, and abstain when confidence is insufficient. The goal is to produce large language model systems that either provide evidence-aligned responses or defer to human expertise when the model cannot answer safely.
-                                    </p>
-                                </div>
-                            </div>
-
-                            <div class="project-part">
-                                <div class="desc">
-                                    <p>
-                                        I am developing an uncertainty-aware reinforcement learning from human feedback system
-                                        for clinician-facing health forecasting from continuous sensor data. The system combines
-                                        recent patient behavioral markers, clinician prompts, a supervised fine-tuned language
-                                        model, and conformal prediction to generate short clinical summaries with calibrated
-                                        uncertainty.
-                                    </p>
-                                    <p>
-                                        Clinician or artificial-nurse feedback is collected on reliability, understandability,
-                                        and usability, then converted into reward signals that guide model updates. The goal is
-                                        to produce clinical artificial intelligence outputs that are accurate, uncertainty-aware,
-                                        actionable, and better aligned with human expert judgment.
-                                    </p>
-                                </div>
-                            </div>
-
-                            <div class="project-part">
-                                <div class="desc">
-                                    <p>
-                                        My work also involves developing uncertainty-aware energy management methods for wearable Internet of Things devices used in continuous health monitoring. These devices must operate under limited battery capacity and uncertain energy harvesting from sources such as motion, heat, or solar exposure. My work uses upper-bound calibrated multi-target conformal prediction to forecast future energy harvest with coverage guarantees, then allocates energy efficiently so the device can preserve battery life and avoid running out of charge while maintaining reliable sensing and inference.
-                                        <br><b>Highlighted papers:</b><br>
-                                        <a href="https://dl.acm.org/doi/abs/10.24963/ijcai.2025/1079" target="_blank">Sustainable Wearables for Health Applications and Beyond via Uncertainty-Aware Energy Management</a><br>
-                                        <a href="https://ieeexplore.ieee.org/abstract/document/11132634" target="_blank">Uncertainty-Aware Energy Management for Wearable Internet of Things Devices with Conformal Prediction</a>
-                                    </p>
-                                </div>
-                            </div>
+                            <ul class="project-parts-list">
+                                <li class="project-part">
+                                    <div class="desc">
+                                        <p>
+                                            I develop conformal prediction methods for safety-sensitive healthcare tasks,
+                                            producing intervals and regions with formal coverage guarantees. Representative work
+                                            includes clinician-in-the-loop UTI detection from smart-home sensors
+                                            (<a href="https://ojs.aaai.org/index.php/AAAI/article/view/41490" target="_blank">AAAI 2026</a>),
+                                            calibrated cognitive-health regions from smartwatch data
+                                            (<a href="https://dl.acm.org/doi/10.1145/3803409" target="_blank">ACM HEALTH</a>),
+                                            and <a href="https://anonymous.4open.science/r/apr-4C4C/" target="_blank">Adaptive Prediction Regions</a>
+                                            for multi-target regression.
+                                        </p>
+                                    </div>
+                                </li>
+                                <li class="project-part">
+                                    <div class="desc">
+                                        <p>
+                                            I build hallucination control policies for trustworthy LLMs in safety-sensitive settings—detecting
+                                            unsupported claims, quantifying uncertainty, verifying against evidence, and abstaining when
+                                            confidence is low so systems defer to human experts when needed.
+                                        </p>
+                                    </div>
+                                </li>
+                                <li class="project-part">
+                                    <div class="desc">
+                                        <p>
+                                            I develop uncertainty-aware RLHF for clinician-facing forecasting from continuous sensor data,
+                                            combining behavioral markers, clinician prompts, a fine-tuned LLM, and conformal prediction.
+                                            Expert feedback on reliability and usability guides updates toward accurate, actionable,
+                                            expert-aligned clinical AI.
+                                        </p>
+                                    </div>
+                                </li>
+                                <li class="project-part">
+                                    <div class="desc">
+                                        <p>
+                                            I design uncertainty-aware energy management for wearable health IoT under limited battery
+                                            and uncertain harvesting, using calibrated conformal forecasts to allocate energy while
+                                            preserving sensing and inference.
+                                            <br><b>Highlighted papers:</b>
+                                            <a href="https://dl.acm.org/doi/abs/10.24963/ijcai.2025/1079" target="_blank">IJCAI 2025</a> ·
+                                            <a href="https://ieeexplore.ieee.org/abstract/document/11132634" target="_blank">DAC 2025</a>
+                                        </p>
+                                    </div>
+                                </li>
+                            </ul>
                         </div>
                     </div>
                 </section>
