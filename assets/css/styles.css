@@ -512,67 +512,86 @@ html[data-theme="light"] .header .profile-content .name {
 /* PAPERS                    */
 /* ========================= */
 
-.paper-title,
-a.paper-title {
+#publications .paper {
+  padding: 1.15rem 0;
+  margin: 0;
+  border-bottom: 1px solid var(--card-border);
+}
+
+#publications .paper:first-child {
+  padding-top: 0;
+}
+
+#publications .paper:last-child {
+  padding-bottom: 0;
+  border-bottom: none;
+}
+
+#publications .paper-title,
+#publications a.paper-title {
+  font-family: "Montserrat", sans-serif;
   font-size: 16px;
   font-weight: 700;
   color: #4d9fd9;
   text-decoration: none;
 }
 
-html[data-theme="light"] .paper-title,
-html[data-theme="light"] a.paper-title {
+html[data-theme="light"] #publications .paper-title,
+html[data-theme="light"] #publications a.paper-title {
   color: #1565c3;
 }
 
-a.paper-title:hover {
+#publications a.paper-title:hover {
   color: var(--accent-hover);
   text-decoration: underline;
 }
 
-.paper-authors {
+#publications .paper-authors {
   font-size: 14.5px;
   color: var(--secondary-text);
   display: block;
   margin-top: 4px;
 }
 
-.paper-venue {
+#publications .paper-venue {
   font-size: 14px;
   color: var(--tertiary-text);
   display: block;
   margin-top: 2px;
 }
 
-.me {
-  color: var(--accent);
+#publications .me {
+  font-family: "Montserrat", sans-serif;
   font-weight: 700;
+  color: var(--accent);
+  text-decoration: underline;
+  text-underline-offset: 2px;
 }
 
-.paper {
-  margin-bottom: 1.25rem;
-}
-
-.paper-with-thumb {
+#publications .paper-with-thumb {
   display: flex;
+  flex-direction: row-reverse;
   align-items: flex-start;
-  justify-content: space-between;
   gap: 1.25rem;
 }
 
-.paper-text {
+#publications .paper-text {
   flex: 1;
   min-width: 0;
 }
 
-.paper-thumb {
+#publications .paper:not(.paper-with-thumb) {
+  padding-left: calc(260px + 1.25rem);
+}
+
+#publications .paper-thumb {
   flex: 0 0 auto;
   width: 260px;
   max-width: 42%;
   line-height: 0;
 }
 
-.paper-thumb img {
+#publications .paper-thumb img {
   display: block;
   width: 100%;
   height: auto;
@@ -582,14 +601,19 @@ a.paper-title:hover {
 }
 
 @media (max-width: 767.98px) {
-  .paper-with-thumb {
-    flex-direction: column;
+  #publications .paper-with-thumb {
+    flex-direction: column-reverse;
+    align-items: stretch;
   }
 
-  .paper-thumb {
+  #publications .paper:not(.paper-with-thumb) {
+    padding-left: 0;
+  }
+
+  #publications .paper-thumb {
     width: 220px;
     max-width: 70%;
-    align-self: flex-end;
+    align-self: flex-start;
   }
 }
 
