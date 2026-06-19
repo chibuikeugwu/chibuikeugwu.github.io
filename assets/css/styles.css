@@ -546,7 +546,7 @@ a.paper-title:hover {
 
 .me {
   color: var(--accent);
-  font-weight: 600;
+  font-weight: 700;
 }
 
 .paper {
@@ -567,8 +567,8 @@ a.paper-title:hover {
 
 .paper-thumb {
   flex: 0 0 auto;
-  width: 130px;
-  max-width: 28%;
+  width: 260px;
+  max-width: 42%;
   line-height: 0;
 }
 
@@ -587,8 +587,8 @@ a.paper-title:hover {
   }
 
   .paper-thumb {
-    width: 160px;
-    max-width: 55%;
+    width: 220px;
+    max-width: 70%;
     align-self: flex-end;
   }
 }
