@@ -17,7 +17,7 @@
 
     <script defer src="assets/fontawesome/js/all.js"></script>
     <link rel="stylesheet" href="assets/plugins/bootstrap/css/bootstrap.min.css">
-    <link id="theme-style" rel="stylesheet" href="assets/css/styles.css?v=33">
+    <link id="theme-style" rel="stylesheet" href="assets/css/styles.css?v=34">
     <script>
         (function () {
             var t = localStorage.getItem("site-theme");
@@ -49,7 +49,7 @@
                             <li class="list-inline-item"><a href="mailto:chibuike.ugwu@wsu.edu"
                                     title="Email"><i class="fas fa-envelope"></i></a></li>
                         </ul>
-                        <h4 class="note">(Last Update: May 2026)</h4>
+                        <h4 class="note">(Last Update: September 2026)</h4>
                     </div>
                 </div>
 
@@ -77,8 +77,103 @@
 
     <div class="container sections-wrapper py-5 px-1">
         <div class="row top-intro-row">
-            <div class="col-lg-8 col-12 about-col">
-                <section class="about section">
+            <div class="col-lg-6 col-12">
+                <section class="experience aside section experience-sidebar w-100 h-100" id="experience">
+                    <div class="section-inner shadow-sm rounded h-100">
+                        <h2 class="heading">Professional Experience</h2>
+                        <div class="content">
+                            <div class="org-item">
+                                <div class="org-logo-wrap logo-flush">
+                                    <img src="images/mayo_clinic_logo_2.jpeg" alt="Mayo Clinic logo" />
+                                </div>
+                                <div class="org-item-body">
+                                    <h3 class="title">AI Research Intern</h3>
+                                    <h4 class="university">
+                                        <a href="https://www.mayoclinic.org/" target="_blank">Mayo Clinic</a>, AI &amp; Informatics
+                                    </h4>
+                                    <div class="org-meta">Rochester, MN, USA <span class="year">(Sept. 2026 – Dec. 2026)</span></div>
+                                </div>
+                            </div>
+                            <div class="org-item">
+                                <div class="org-logo-wrap">
+                                    <img src="images/wsu_logo.png" alt="Washington State University logo" />
+                                </div>
+                                <div class="org-item-body">
+                                    <h3 class="title">Research Assistant</h3>
+                                    <h4 class="university">
+                                        <a href="https://school.eecs.wsu.edu/" target="_blank">Washington State University</a>, EECS Department
+                                    </h4>
+                                    <div class="org-meta">Pullman, WA, USA <span class="year">(Aug 2022 – Present)</span></div>
+                                </div>
+                            </div>
+                            <div class="org-item">
+                                <div class="org-logo-wrap">
+                                    <img src="images/wsu_logo.png" alt="Washington State University logo" />
+                                </div>
+                                <div class="org-item-body">
+                                    <h3 class="title">Teaching Assistant and Guest Lecturer</h3>
+                                    <h4 class="university">
+                                        <a href="https://school.eecs.wsu.edu/" target="_blank">Washington State University</a>, EECS Department
+                                    </h4>
+                                    <div class="org-meta">Pullman, WA, USA <span class="year">(Aug 2022 – Dec 2024)</span></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+            <div class="col-lg-6 col-12">
+                <aside class="education aside section education-sidebar w-100 h-100">
+                    <div class="section-inner shadow-sm rounded h-100">
+                        <h2 class="heading">Education</h2>
+                        <div class="content">
+                            <div class="org-item">
+                                <div class="org-logo-wrap">
+                                    <img src="images/wsu_logo.png" alt="Washington State University logo" />
+                                </div>
+                                <div class="org-item-body">
+                                    <h3 class="title">Ph.D. Computer Science</h3>
+                                    <h4 class="university">Washington State University <span class="year">(2022 – Present)</span></h4>
+                                    <div class="org-meta">Pullman, WA, USA</div>
+                                </div>
+                            </div>
+                            <div class="org-item">
+                                <div class="org-logo-wrap">
+                                    <img src="images/wsu_logo.png" alt="Washington State University logo" />
+                                </div>
+                                <div class="org-item-body">
+                                    <h3 class="title">
+                                        M.Sc. Computer Science
+                                        <i class="fas fa-graduation-cap" style="font-size:0.85em; margin-left:4px;"></i>
+                                    </h3>
+                                    <h4 class="university">Washington State University <span class="year">(2022 – 2025)</span></h4>
+                                    <div class="org-meta">Pullman, WA, USA</div>
+                                </div>
+                            </div>
+                            <div class="org-item">
+                                <div class="org-logo-wrap">
+                                    <img src="images/unn_logo.png" alt="University of Nigeria logo" />
+                                </div>
+                                <div class="org-item-body">
+                                    <h3 class="title">
+                                        B.Sc. Statistics
+                                        <i class="fas fa-graduation-cap" style="font-size:0.85em; margin-left:4px;"></i>
+                                        <span class="education-honor">(First Class Honors)</span>
+                                    </h3>
+                                    <h4 class="university">University of Nigeria <span class="year">(2014 – 2018)</span></h4>
+                                    <div class="org-meta">Nsukka, Nigeria</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </aside>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-12 about-col">
+                <section class="about section" id="about">
                     <div class="section-inner shadow-sm rounded">
                         <h2 class="heading">About Me</h2>
                         <div class="content">
@@ -86,6 +181,8 @@
                                 I am a Ph.D. candidate in Computer Science at
                                 <a href="https://wsu.edu" target="_blank">Washington State University</a>,
                                 where I am fortunate to be advised by Professors <a href="https://eecs.wsu.edu/~jana/" target="_blank">Jana Doppa</a> and <a href="https://eecs.wsu.edu/~cook/" target="_blank">Diane Cook</a>.
+                                I am currently an <strong>AI Research Intern</strong> in
+                                <a href="https://www.mayoclinic.org/" target="_blank">Mayo Clinic</a> AI &amp; Informatics.
                                 My general research interests are in <strong>Artificial Intelligence (AI)</strong> and
                                 <strong>Machine Learning (ML)</strong>, with a main focus on developing robust, safe, and trustworthy ML
                                 algorithms with theoretical guarantees for deployment in critical real-world challenges within
@@ -100,37 +197,6 @@
                         </div>
                     </div>
                 </section>
-            </div>
-
-            <div class="col-lg-4 col-12">
-                <aside class="education aside section education-sidebar w-100">
-                    <div class="section-inner shadow-sm rounded h-100">
-                        <h2 class="heading">Education</h2>
-                        <div class="content">
-                            <div class="item">
-                                <h3 class="title">
-                                    Ph.D. Computer Science
-                                </h3>
-                                <h4 class="university">Washington State University <span class="year">(2022 – Present)</span></h4>
-                            </div>
-                            <div class="item">
-                                <h3 class="title">
-                                    M.Sc. Computer Science
-                                    <i class="fas fa-graduation-cap" style="font-size:0.85em; margin-left:4px;"></i>
-                                </h3>
-                                <h4 class="university">Washington State University <span class="year">(2022 – 2025)</span></h4>
-                            </div>
-                            <div class="item">
-                                <h3 class="title">
-                                    B.Sc. Statistics
-                                    <i class="fas fa-graduation-cap" style="font-size:0.85em; margin-left:4px;"></i>
-                                    <span class="education-honor">(First Class Honors)</span>
-                                </h3>
-                                <h4 class="university">University of Nigeria <span class="year">(2014 – 2018)</span></h4>
-                            </div>
-                        </div>
-                    </div>
-                </aside>
             </div>
         </div>
 
@@ -201,6 +267,10 @@
                         <h2 class="heading">Latest News</h2>
                         <div class="content">
                             <ul class="news-list">
+                                <li>
+                                    <span class="news-date">September, 2026 —</span>
+                                    I have started as an AI Research Intern at <a href="https://www.mayoclinic.org/" target="_blank">Mayo Clinic</a> AI &amp; Informatics in Rochester, MN.
+                                </li>
                                 <li>
                                     <span class="news-date"> April, 2026 —</span>
                                     I am super excited to receive three amazing awards:
@@ -487,32 +557,56 @@
                 </div>
 
                 <div class="col-12" style="margin-top:20px;">
-                    <section class="experience section" id="experience">
+                    <section class="experience section" id="appointments">
                         <div class="section-inner shadow-sm rounded">
                             <h2 class="heading">Professional Appointments</h2>
                             <div class="content">
-                                <div class="item" style="margin-bottom:18px;">
-                                    <h3 class="title appointment-heading">
-                                        Research Assistant <span class="year">(Aug 2022 – Present)</span>
-                                    </h3>
-                                    <div class="university" style="margin-bottom:6px;">EECS Department, Washington State University · Pullman, WA</div>
-                                    <p style="margin:0;font-size:15px;">Developing novel algorithms and theory for robust and trustworthy machine learning.</p>
-                                </div>
-                                <div class="item">
-                                    <h3 class="title appointment-heading">
-                                        Teaching Assistant and Guest Lecturer <span class="year">(Aug 2022 – Dec 2024)</span>
-                                    </h3>
-                                    <div class="university" style="margin-bottom:8px;">EECS Department, Washington State University · Pullman, WA</div>
-                                    <div style="margin-left:10px;">
-                                        <div class="title">
-                                            <i class="fas fa-school-flag" style="font-size:0.7em; margin-right:6px;"></i>
-                                            CptS 223 — <span class="year">Advanced Data Structures C/C++</span>
-                                            <span class="place">Fall 2022, Fall 2023, Fall 2024</span>
+                                <div class="org-item">
+                                    <div class="org-logo-wrap logo-flush">
+                                        <img src="images/mayo_clinic_logo_2.jpeg" alt="Mayo Clinic logo" />
+                                    </div>
+                                    <div class="org-item-body">
+                                        <h3 class="title appointment-heading">
+                                            AI Research Intern <span class="year">(Sept. 2026 – Dec. 2026)</span>
+                                        </h3>
+                                        <div class="university" style="margin-bottom:6px;">
+                                            <a href="https://www.mayoclinic.org/" target="_blank">Mayo Clinic</a>, AI &amp; Informatics · Rochester, MN, USA
                                         </div>
-                                        <div class="title">
-                                            <i class="fas fa-school-flag" style="font-size:0.7em; margin-right:6px;"></i>
-                                            CptS 315 — <span class="year">Introduction to Data Mining</span>
-                                            <span class="place">Spring 2023, Spring 2024</span>
+                                        <p style="margin:0;font-size:15px;">Conducting machine learning and artificial intelligence research for healthcare applications.</p>
+                                    </div>
+                                </div>
+                                <div class="org-item">
+                                    <div class="org-logo-wrap">
+                                        <img src="images/wsu_logo.png" alt="Washington State University logo" />
+                                    </div>
+                                    <div class="org-item-body">
+                                        <h3 class="title appointment-heading">
+                                            Research Assistant <span class="year">(Aug 2022 – Present)</span>
+                                        </h3>
+                                        <div class="university" style="margin-bottom:6px;">EECS Department, Washington State University · Pullman, WA</div>
+                                        <p style="margin:0;font-size:15px;">Developing novel algorithms and theory for robust and trustworthy machine learning.</p>
+                                    </div>
+                                </div>
+                                <div class="org-item">
+                                    <div class="org-logo-wrap">
+                                        <img src="images/wsu_logo.png" alt="Washington State University logo" />
+                                    </div>
+                                    <div class="org-item-body">
+                                        <h3 class="title appointment-heading">
+                                            Teaching Assistant and Guest Lecturer <span class="year">(Aug 2022 – Dec 2024)</span>
+                                        </h3>
+                                        <div class="university" style="margin-bottom:8px;">EECS Department, Washington State University · Pullman, WA</div>
+                                        <div>
+                                            <div class="course-line">
+                                                <i class="fas fa-school-flag" style="font-size:0.7em; margin-right:6px;"></i>
+                                                CptS 223 — <span class="year">Advanced Data Structures C/C++</span>
+                                                <span class="place">Fall 2022, Fall 2023, Fall 2024</span>
+                                            </div>
+                                            <div class="course-line">
+                                                <i class="fas fa-school-flag" style="font-size:0.7em; margin-right:6px;"></i>
+                                                CptS 315 — <span class="year">Introduction to Data Mining</span>
+                                                <span class="place">Spring 2023, Spring 2024</span>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>

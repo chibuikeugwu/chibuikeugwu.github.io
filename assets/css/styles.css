@@ -276,76 +276,116 @@ html[data-theme="light"] .header .profile-content .name {
 }
 
 /* ========================= */
-/* TOP ROW: ABOUT + EDU      */
+/* TOP ROW: EXPERIENCE + EDU */
 /* ========================= */
 
 .top-intro-row {
-  margin-bottom: 20px;
+  margin-bottom: 8px;
 }
 
-.top-intro-row .about-col {
+.top-intro-row > [class*="col-"] {
   margin-bottom: 15px;
 }
 
-/* Slightly larger type for About + Education (readability in light/dark) */
-.top-intro-row .section .heading {
-  font-size: 1.725rem;
+.top-intro-row .section {
+  height: 100%;
+  margin-bottom: 0;
 }
 
-.top-intro-row .about .content p,
-.top-intro-row .about .content li {
+.top-intro-row .section .heading {
+  font-size: 1.625rem;
+}
+
+.about-col {
+  margin-bottom: 15px;
+}
+
+.about .content p,
+.about .content li {
   font-size: 17px;
   line-height: 1.68;
   color: var(--primary-text);
 }
 
-.top-intro-row .education-sidebar .heading {
-  font-size: 1.625rem;
+/* Logo + text rows used in Experience and Education */
+.org-item {
+  display: flex;
+  gap: 12px;
+  align-items: flex-start;
+  margin-bottom: 16px;
 }
 
-.top-intro-row .education-sidebar .item .title {
-  font-size: 17px;
-  font-family: "Montserrat", sans-serif;
-  font-weight: 800;
-  line-height: 1.45;
-}
-
-.top-intro-row .education-sidebar .item .university {
-  font-size: 14.5px;
-  line-height: 1.5;
-  color: var(--secondary-text);
-}
-
-.education-sidebar .item {
-  margin-bottom: 14px;
-}
-
-.education-sidebar .item:last-child {
+.org-item:last-child {
   margin-bottom: 0;
 }
 
-.education-sidebar .item .title {
-  font-size: 16px;
+.org-logo-wrap {
+  flex-shrink: 0;
+  width: 52px;
+  height: 52px;
+  padding: 5px;
+  border-radius: 8px;
+  background: #ffffff;
+  border: 1px solid var(--card-border);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.org-logo-wrap.logo-flush {
+  padding: 0;
+  background: #0057b8;
+}
+
+.org-logo-wrap img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
+}
+
+.org-item-body {
+  flex: 1;
+  min-width: 0;
+}
+
+.org-item-body .title {
+  font-size: 16.5px;
   font-family: "Montserrat", sans-serif;
   font-weight: 800;
   line-height: 1.4;
+  margin: 0 0 2px 0;
+  color: var(--primary-text);
 }
 
-.education-sidebar .item .title .education-honor {
+.org-item-body .title .education-honor {
   font-family: "Lato", "Roboto", sans-serif;
   font-weight: 400;
 }
 
-.education-sidebar .item .university {
-  font-size: 13.5px;
-  color: var(--secondary-text);
+.org-item-body .university {
+  font-size: 14px;
   line-height: 1.45;
-  margin-top: 4px;
+  color: var(--secondary-text);
+  margin: 0;
 }
 
+.org-item-body .org-meta {
+  font-size: 13.5px;
+  line-height: 1.45;
+  color: var(--tertiary-text);
+  margin-top: 2px;
+}
+
+.org-item-body .org-meta .year,
+.org-item-body .university .year {
+  white-space: nowrap;
+}
+
+.experience-sidebar .heading,
 .education-sidebar .heading {
-  font-size: 1.25rem;
-  margin-bottom: 12px;
+  margin-bottom: 14px;
 }
 
 /* ========================= */
@@ -439,20 +479,38 @@ html[data-theme="light"] .header .profile-content .name {
   font-weight: 900;
 }
 
-.experience .appointment-heading::before {
-  content: "\2022";
-  color: var(--accent);
-  margin-right: 8px;
-}
-
-.experience .item .university {
+.experience .item .university,
+.experience .org-item-body .university {
   font-size: 13.5px;
 }
 
-.about .content p,
 .desc p {
   font-size: 16px;
   line-height: 1.6;
+}
+
+#appointments .org-item {
+  margin-bottom: 22px;
+}
+
+#appointments .org-item:last-child {
+  margin-bottom: 0;
+}
+
+.course-line {
+  font-size: 14.5px;
+  line-height: 1.55;
+  color: var(--primary-text);
+  margin-bottom: 4px;
+}
+
+.course-line .year {
+  color: var(--secondary-text);
+}
+
+.course-line .place {
+  color: var(--tertiary-text);
+  margin-left: 6px;
 }
 
 /* ========================= */
@@ -762,20 +820,12 @@ html[data-theme="light"] #publications a.paper-title {
 /* ========================= */
 
 @media (max-width: 991.98px) {
-  .top-intro-row .education-sidebar .item .title {
-    font-size: 16.5px;
-  }
-
-  .top-intro-row .education-sidebar .item .university {
-    font-size: 15px;
-  }
-
-  .education-sidebar .item .title {
+  .org-item-body .title {
     font-size: 16px;
   }
 
-  .education-sidebar .item .university {
-    font-size: 14px;
+  .org-item-body .university {
+    font-size: 14.5px;
   }
 }
 
