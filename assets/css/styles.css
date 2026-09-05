@@ -321,9 +321,9 @@ html[data-theme="light"] .header .profile-content .name {
 
 .org-logo-wrap {
   flex-shrink: 0;
-  width: 52px;
-  height: 52px;
-  padding: 5px;
+  width: 68px;
+  height: 68px;
+  padding: 4px;
   border-radius: 8px;
   background: #ffffff;
   border: 1px solid var(--card-border);
