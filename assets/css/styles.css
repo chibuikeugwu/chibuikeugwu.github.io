@@ -378,6 +378,14 @@ html[data-theme="light"] .header .profile-content .name {
   margin-top: 2px;
 }
 
+.org-item-body .title .year {
+  font-family: "Lato", "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 13.5px;
+  color: var(--secondary-text);
+  white-space: nowrap;
+}
+
 .org-item-body .org-meta .year,
 .org-item-body .university .year {
   white-space: nowrap;
