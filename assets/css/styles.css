@@ -313,6 +313,47 @@ html[data-theme="light"] .header .profile-content .name {
   gap: 12px;
   align-items: flex-start;
   margin-bottom: 16px;
+  position: relative;
+}
+
+.org-item:last-child {
+  margin-bottom: 0;
+}
+
+.org-timeline {
+  position: relative;
+  padding-left: 20px;
+}
+
+.org-timeline::before {
+  content: "";
+  position: absolute;
+  left: 5px;
+  top: 26px;
+  bottom: 26px;
+  width: 2px;
+  background: var(--accent);
+  opacity: 0.45;
+  border-radius: 1px;
+}
+
+.org-timeline .org-item::before {
+  content: "";
+  position: absolute;
+  left: -20px;
+  top: 20px;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  border: 2px solid var(--accent);
+  background: var(--card-bg);
+  box-sizing: border-box;
+  z-index: 1;
+}
+
+.org-timeline .org-item:first-child::before {
+  background: var(--accent);
+  border-color: var(--accent);
 }
 
 .org-item:last-child {
