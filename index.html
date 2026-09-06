@@ -17,7 +17,7 @@
 
     <script defer src="assets/fontawesome/js/all.js"></script>
     <link rel="stylesheet" href="assets/plugins/bootstrap/css/bootstrap.min.css">
-    <link id="theme-style" rel="stylesheet" href="assets/css/styles.css?v=49">
+    <link id="theme-style" rel="stylesheet" href="assets/css/styles.css?v=50">
     <script>
         (function () {
             var t = localStorage.getItem("site-theme");
@@ -31,7 +31,6 @@
     <div class="site-top">
         <nav class="header-nav" aria-label="Page sections">
             <ul>
-                <li><a href="#projects">Projects</a></li>
                 <li><a href="#news">News</a></li>
                 <li><a href="#publications">Publications</a></li>
                 <li><a href="files/Resume_Chibuike.pdf" target="_blank">CV</a></li>
@@ -97,7 +96,7 @@
                             <div class="about-split-col about-interests-col">
                                 <h3 class="about-subheading">Interests</h3>
                                 <ul class="about-compact-list">
-                                    <li>Trustworthy machine learning</li>
+                                    <li>Trustworthy AI</li>
                                     <li>Large Language Models</li>
                                     <li>AI safety</li>
                                     <li>AI in Healthcare</li>
@@ -202,104 +201,78 @@
 
         <div class="row">
             <div class="secodary-full col-md-12 col-xxl-12">
-                <section id="projects" class="latest section">
-                    <div class="section-inner shadow-sm rounded">
-                        <h2 class="heading">Projects</h2>
-                        <div class="content projects-unified">
-                            <div class="projects-hero">
-                                <img class="projects-hero-image" src="images/full_research.png"
-                                    alt="Overview of research on uncertainty quantification, trustworthy LLMs, RLHF, and wearable IoT" />
-                            </div>
-
-                            <ul class="project-parts-list">
-                                <li class="project-part">
-                                    <div class="desc">
-                                        <p>
-                                            I develop conformal prediction methods for safety-sensitive healthcare tasks,
-                                            producing intervals and regions with formal coverage guarantees. Representative work
-                                            includes clinician-in-the-loop UTI detection from smart-home sensors
-                                            (<a href="https://ojs.aaai.org/index.php/AAAI/article/view/41490" target="_blank">AAAI 2026</a>),
-                                            calibrated cognitive-health regions from smartwatch data
-                                            (<a href="https://dl.acm.org/doi/10.1145/3803409" target="_blank">ACM HEALTH</a>),
-                                            and <a href="https://anonymous.4open.science/r/apr-4C4C/" target="_blank">Adaptive Prediction Regions</a>
-                                            for multi-target regression.
-                                        </p>
-                                    </div>
-                                </li>
-                                <li class="project-part">
-                                    <div class="desc">
-                                        <p>
-                                            I build hallucination control policies for trustworthy LLMs in safety-sensitive settings—detecting
-                                            unsupported claims, quantifying uncertainty, verifying against evidence, and abstaining when
-                                            confidence is low so systems defer to human experts when needed.
-                                        </p>
-                                    </div>
-                                </li>
-                                <li class="project-part">
-                                    <div class="desc">
-                                        <p>
-                                            I develop uncertainty-aware RLHF for clinician-facing forecasting from continuous sensor data,
-                                            combining behavioral markers, clinician prompts, a fine-tuned LLM, and conformal prediction.
-                                            Expert feedback on reliability and usability guides updates toward accurate, actionable,
-                                            expert-aligned clinical AI.
-                                        </p>
-                                    </div>
-                                </li>
-                                <li class="project-part">
-                                    <div class="desc">
-                                        <p>
-                                            I design uncertainty-aware energy management for wearable health IoT under limited battery
-                                            and uncertain harvesting, using calibrated conformal forecasts to allocate energy while
-                                            preserving sensing and inference.
-                                            <br><b>Highlighted papers:</b>
-                                            <a href="https://dl.acm.org/doi/abs/10.24963/ijcai.2025/1079" target="_blank">IJCAI 2025</a> ·
-                                            <a href="https://ieeexplore.ieee.org/abstract/document/11132634" target="_blank">DAC 2025</a>
-                                        </p>
-                                    </div>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </section>
-
                 <section class="news section" id="news">
                     <div class="section-inner shadow-sm rounded">
                         <h2 class="heading">Latest News</h2>
                         <div class="content">
                             <ul class="news-list">
                                 <li>
-                                    <span class="news-date">September, 2026 —</span>
-                                    I have started as an AI Research Intern at <a href="https://www.mayoclinic.org/" target="_blank">Mayo Clinic</a> AI &amp; Informatics in Rochester, MN.
+                                    Started as an AI &amp; Informatics Research Intern at
+                                    <a href="https://www.mayoclinic.org/" target="_blank">Mayo Clinic</a> in Rochester, MN.
+                                    <span class="news-date">(September 2026)</span>
                                 </li>
                                 <li>
-                                    <span class="news-date"> April, 2026 —</span>
-                                    I am super excited to receive three amazing awards:
-                                    <ul>
-                                        <li>Overall Outstanding Research Assistant, <a href="https://vcea.wsu.edu/" target="_blank">Voiland College of Engineering and Architecture (VCEA)</a></li>
-                                        <li>Outstanding Research Assistant, <a href="https://eecs.wsu.edu/" target="_blank">School of Electrical Engineering and Computer Science (EECS)</a></li>
-                                        <li>Research Assistant of the Year, <a href="https://gpsa.wsu.edu/" target="_blank">Graduate and Professional Student Association (GPSA)</a></li>
-                                    </ul>
+                                    <i class="fas fa-medal news-medal" title="Award" aria-hidden="true"></i>
+                                    Received the Overall Outstanding Research Assistant award,
+                                    <a href="https://vcea.wsu.edu/" target="_blank">Voiland College of Engineering and Architecture (VCEA)</a>.
+                                    <span class="news-date">(April 2026)</span>
                                 </li>
                                 <li>
-                                    <span class="news-date">2026 —</span>
-                                    I am thrilled to share that my papers were accepted:
-                                    <ol>
-                                        <li><strong>AAAI 2026</strong> - Clinician-in-the-Loop Smart Home System to Detect Urinary Tract Infection Flare-Ups via Uncertainty-Aware Decision Support</li>
-                                        <li><strong>ACM HEALTH</strong> - Conformalized Uncertainty Regions for Machine Learning-Based Multiple Cognitive Health Measures from Smartwatch Sensor Data</li>
-                                        <li><strong>ACM TODAES</strong> - Trading Off Performance and Sustainability in Internet of Things: An Uncertainty-Aware Hierarchical Energy Management Approach</li>
-                                    </ol>
+                                    <i class="fas fa-medal news-medal" title="Award" aria-hidden="true"></i>
+                                    Received the Outstanding Research Assistant in Computer Science award,
+                                    <a href="https://eecs.wsu.edu/" target="_blank">School of Electrical Engineering and Computer Science (EECS)</a>.
+                                    <span class="news-date">(April 2026)</span>
                                 </li>
                                 <li>
-                                    <span class="news-date">2025 —</span>
-                                    Received the Mahmoud M. Dillsi Graduate Fellowship; papers accepted at <strong>IJCAI 2025</strong>, <strong>DAC 2025</strong>, and <strong>ACM TECS</strong> (ERGo).
+                                    <i class="fas fa-medal news-medal" title="Award" aria-hidden="true"></i>
+                                    Received the Research Assistant of the Year award,
+                                    <a href="https://gpsa.wsu.edu/" target="_blank">Graduate and Professional Student Association (GPSA)</a>.
+                                    <span class="news-date">(April 2026)</span>
                                 </li>
                                 <li>
-                                    <span class="news-date">May 2025 —</span>
+                                    Paper accepted at <strong>AAAI 2026</strong>: Clinician-in-the-Loop Smart Home System to Detect Urinary Tract Infection Flare-Ups via Uncertainty-Aware Decision Support.
+                                    <span class="news-date">(2026)</span>
+                                </li>
+                                <li>
+                                    Paper accepted at <strong>ACM HEALTH</strong>: Conformalized Uncertainty Regions for Machine Learning-Based Multiple Cognitive Health Measures from Smartwatch Sensor Data.
+                                    <span class="news-date">(2026)</span>
+                                </li>
+                                <li>
+                                    Paper accepted at <strong>ACM TODAES</strong>: Trading Off Performance and Sustainability in Internet of Things: An Uncertainty-Aware Hierarchical Energy Management Approach.
+                                    <span class="news-date">(2026)</span>
+                                </li>
+                                <li>
+                                    <i class="fas fa-medal news-medal" title="Award" aria-hidden="true"></i>
+                                    Received the Mahmoud M. Dillsi Graduate Fellowship.
+                                    <span class="news-date">(2025)</span>
+                                </li>
+                                <li>
+                                    Paper accepted at <strong>IJCAI 2025</strong>.
+                                    <span class="news-date">(2025)</span>
+                                </li>
+                                <li>
+                                    Paper accepted at <strong>DAC 2025</strong>.
+                                    <span class="news-date">(2025)</span>
+                                </li>
+                                <li>
+                                    Paper accepted at <strong>ACM TECS</strong> (ERGo).
+                                    <span class="news-date">(2025)</span>
+                                </li>
+                                <li>
                                     Successfully passed my Ph.D. Preliminary Exam. Now a Ph.D. candidate!
+                                    <span class="news-date">(May 2025)</span>
                                 </li>
                                 <li>
-                                    <span class="news-date">2024 —</span>
-                                    Outstanding Graduate Teaching Assistant in <a href="https://eecs.wsu.edu/" target="_blank">EECS</a> (<a href="https://vcea.wsu.edu/" target="_blank">VCEA</a>); Nakahara Tsuyoshi and Mary Fellowship.
+                                    <i class="fas fa-medal news-medal" title="Award" aria-hidden="true"></i>
+                                    Received the Outstanding Graduate Teaching Assistant in
+                                    <a href="https://eecs.wsu.edu/" target="_blank">EECS</a> award
+                                    (<a href="https://vcea.wsu.edu/" target="_blank">VCEA</a>).
+                                    <span class="news-date">(2024)</span>
+                                </li>
+                                <li>
+                                    <i class="fas fa-medal news-medal" title="Award" aria-hidden="true"></i>
+                                    Received the Nakahara Tsuyoshi and Mary Fellowship.
+                                    <span class="news-date">(2024)</span>
                                 </li>
                             </ul>
                         </div>

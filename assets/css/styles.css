@@ -588,15 +588,15 @@ html[data-theme="light"] .header .profile-content .name {
 /* ========================= */
 
 .news-list {
-  list-style: none;
-  padding: 0;
+  list-style: disc;
+  padding-left: 1.35em;
   margin: 0;
 }
 
 .news-list li {
-  padding: 12px 0;
+  padding: 8px 0;
   border-bottom: 1px solid var(--card-border);
-  line-height: 1.6;
+  line-height: 1.55;
 }
 
 .news-list li:last-child {
@@ -612,6 +612,11 @@ html[data-theme="light"] .header .profile-content .name {
   font-weight: 700;
   color: var(--accent);
   white-space: nowrap;
+}
+
+.news-medal {
+  color: #e0b422;
+  margin-right: 6px;
 }
 
 /* ========================= */
