@@ -272,7 +272,7 @@ html[data-theme="light"] .header .profile-content .name {
 }
 
 .header-about .content p {
-  margin-bottom: 0.65em;
+  margin-bottom: 0.55em;
 }
 
 .header-about .content ul {
@@ -316,6 +316,10 @@ html[data-theme="light"] .header .profile-content .name {
   font-size: 14.5px;
   line-height: 1.4;
   white-space: nowrap;
+}
+
+.research-focus-list li {
+  white-space: normal;
 }
 
 /* Theme toggle */
