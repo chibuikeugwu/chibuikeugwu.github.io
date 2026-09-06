@@ -228,47 +228,36 @@ html[data-theme="light"] .header .profile-content .name {
   white-space: nowrap;
 }
 
-.profile-photo-row {
-  display: flex;
-  align-items: center;
-  gap: 12px;
+.header .profile-content .social {
+  margin-top: 8px;
+  margin-bottom: 0;
 }
 
-.header-profile .profile-social {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 8px;
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-.header-profile .profile-social a {
+.header .profile-content .social a {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: 40px;
-  height: 40px;
+  width: 30px;
+  height: 30px;
   border-radius: 50%;
   background: var(--social-bg);
   color: var(--primary-text);
-  font-size: 1.15rem;
+  font-size: 0.9rem;
   text-decoration: none;
   transition: background 0.25s ease, color 0.25s ease;
 }
 
-.header-profile .profile-social a i {
-  font-size: 1.15rem;
+.header .profile-content .social a i {
+  font-size: 0.9rem;
   line-height: 1;
 }
 
-.header-profile .profile-social a .fa-linkedin-in,
-.header-profile .profile-social a .fa-orcid {
-  font-size: 1.25rem;
+.header .profile-content .social a .fa-linkedin-in,
+.header .profile-content .social a .fa-orcid {
+  font-size: 0.95rem;
 }
 
-.header-profile .profile-social a:hover {
+.header .profile-content .social a:hover {
   background: var(--accent);
   color: #fff;
 }
