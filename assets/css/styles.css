@@ -217,7 +217,7 @@ html[data-theme="light"] .header .profile-content .name {
 
 .header .profile-content .desc {
   color: var(--secondary-text);
-  font-size: 20px;
+  font-size: 16px;
   margin-bottom: 6px;
   white-space: nowrap;
 }
