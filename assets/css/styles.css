@@ -228,7 +228,23 @@ html[data-theme="light"] .header .profile-content .name {
   white-space: nowrap;
 }
 
-.header .profile-content .social a {
+.profile-photo-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.header-profile .profile-social {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.header-profile .profile-social a {
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -242,17 +258,17 @@ html[data-theme="light"] .header .profile-content .name {
   transition: background 0.25s ease, color 0.25s ease;
 }
 
-.header .profile-content .social a i {
+.header-profile .profile-social a i {
   font-size: 1.15rem;
   line-height: 1;
 }
 
-.header .profile-content .social a .fa-linkedin-in,
-.header .profile-content .social a .fa-orcid {
+.header-profile .profile-social a .fa-linkedin-in,
+.header-profile .profile-social a .fa-orcid {
   font-size: 1.25rem;
 }
 
-.header .profile-content .social a:hover {
+.header-profile .profile-social a:hover {
   background: var(--accent);
   color: #fff;
 }
