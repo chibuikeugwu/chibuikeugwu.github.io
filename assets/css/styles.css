@@ -175,9 +175,11 @@ a:hover {
 
 .header-profile {
   display: flex;
+  flex-direction: column;
   align-items: center;
-  flex: 0 1 38%;
-  min-width: 280px;
+  flex: 0 0 220px;
+  min-width: 200px;
+  text-align: center;
 }
 
 .header .profile-image {
@@ -194,14 +196,17 @@ html[data-theme="light"] .header .profile-image {
 .header .profile-content {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  margin-left: 20px;
+  align-items: center;
+  justify-content: flex-start;
+  margin-left: 0;
+  margin-top: 12px;
 }
 
 .header .profile-content .name {
   color: var(--primary-text);
-  font-size: 34px;
+  font-size: 26px;
   margin-bottom: 2px;
+  line-height: 1.2;
   text-shadow: 0 1px 4px rgba(0, 0, 0, 0.45);
 }
 
@@ -211,8 +216,8 @@ html[data-theme="light"] .header .profile-content .name {
 
 .header .profile-content .desc {
   color: var(--secondary-text);
-  font-size: 20px;
-  margin-bottom: 8px;
+  font-size: 15px;
+  margin-bottom: 6px;
 }
 
 .header .profile-content .note {
@@ -250,8 +255,8 @@ html[data-theme="light"] .header .profile-content .name {
 }
 
 .header-about {
-  flex: 1 1 58%;
-  min-width: 280px;
+  flex: 1 1 auto;
+  min-width: 0;
 }
 
 .header-about .heading {
