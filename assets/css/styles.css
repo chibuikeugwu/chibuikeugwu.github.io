@@ -177,8 +177,9 @@ a:hover {
   display: flex;
   flex-direction: column;
   align-items: center;
-  flex: 0 0 220px;
-  min-width: 200px;
+  flex: 0 0 auto;
+  width: max-content;
+  max-width: 100%;
   text-align: center;
 }
 
@@ -216,13 +217,15 @@ html[data-theme="light"] .header .profile-content .name {
 
 .header .profile-content .desc {
   color: var(--secondary-text);
-  font-size: 15px;
+  font-size: 20px;
   margin-bottom: 6px;
+  white-space: nowrap;
 }
 
 .header .profile-content .note {
   color: var(--tertiary-text);
   font-size: 13px;
+  white-space: nowrap;
 }
 
 .header .profile-content .social a {
@@ -1020,6 +1023,11 @@ html[data-theme="light"] #publications a.paper-title {
     flex-direction: column;
     min-width: 0;
     width: 100%;
+  }
+
+  .header .profile-content .desc,
+  .header .profile-content .note {
+    white-space: normal;
   }
 
   .header .profile-content {
