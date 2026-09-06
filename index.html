@@ -17,7 +17,7 @@
 
     <script defer src="assets/fontawesome/js/all.js"></script>
     <link rel="stylesheet" href="assets/plugins/bootstrap/css/bootstrap.min.css">
-    <link id="theme-style" rel="stylesheet" href="assets/css/styles.css?v=39">
+    <link id="theme-style" rel="stylesheet" href="assets/css/styles.css?v=40">
     <script>
         (function () {
             var t = localStorage.getItem("site-theme");
@@ -28,27 +28,27 @@
 </head>
 
 <body>
+    <div class="site-top">
+        <nav class="header-nav" aria-label="Page sections">
+            <ul>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#news">News</a></li>
+                <li><a href="#publications">Publications</a></li>
+                <li><a href="files/Resume_Chibuike.pdf" target="_blank">CV</a></li>
+                <li><a href="#awards">Awards</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#service">Service</a></li>
+            </ul>
+        </nav>
+        <button type="button" id="themeToggle" class="theme-toggle-btn" aria-pressed="true"
+            title="Switch to light mode">
+            <i class="fas fa-sun" aria-hidden="true"></i>
+            <span class="theme-toggle-label">Light</span>
+        </button>
+    </div>
+
     <header class="header">
         <div class="container">
-            <div class="header-top">
-                <nav class="header-nav" aria-label="Page sections">
-                    <ul>
-                        <li><a href="#projects">Projects</a></li>
-                        <li><a href="#news">News</a></li>
-                        <li><a href="#publications">Publications</a></li>
-                        <li><a href="files/Resume_Chibuike.pdf" target="_blank">CV</a></li>
-                        <li><a href="#awards">Awards</a></li>
-                        <li><a href="#experience">Experience</a></li>
-                        <li><a href="#service">Service</a></li>
-                    </ul>
-                </nav>
-                <button type="button" id="themeToggle" class="theme-toggle-btn" aria-pressed="true"
-                    title="Switch to light mode">
-                    <i class="fas fa-sun" aria-hidden="true"></i>
-                    <span class="theme-toggle-label">Light</span>
-                </button>
-            </div>
-
             <div class="header-main">
                 <div class="header-profile">
                     <img class="profile-image img-fluid rounded-circle" src="assets/images/profile.jpg"
@@ -78,20 +78,32 @@
                         <p>
                             I am a final-year Ph.D. candidate in Computer Science at
                             <a href="https://wsu.edu" target="_blank">Washington State University</a>,
-                            where I am fortunate to be advised by Professors <a href="https://eecs.wsu.edu/~jana/" target="_blank">Jana Doppa</a> and <a href="https://eecs.wsu.edu/~cook/" target="_blank">Diane Cook</a>.
-                            I am currently an <strong>AI Research Intern</strong> in
-                            <a href="https://www.mayoclinic.org/" target="_blank">Mayo Clinic</a> AI &amp; Informatics.
-                            My general research interests are in <strong>Artificial Intelligence (AI)</strong> and
-                            <strong>Machine Learning (ML)</strong>, with a main focus on developing robust, safe, and trustworthy ML
-                            algorithms with theoretical guarantees for deployment in critical real-world challenges within
-                            safety-sensitive domains (e.g., healthcare).
+                            advised by Professors <a href="https://eecs.wsu.edu/~jana/" target="_blank">Jana Doppa</a> and <a href="https://eecs.wsu.edu/~cook/" target="_blank">Diane Cook</a>.
+                            I am currently an <strong>AI Research Intern</strong> at
+                            <a href="https://www.mayoclinic.org/" target="_blank">Mayo Clinic</a> AI &amp; Informatics,
+                            developing robust, safe, and trustworthy ML with theoretical guarantees for healthcare and other safety-sensitive domains.
                         </p>
-                        <p>My current research focuses on:</p>
-                        <ul>
-                            <li>Building trustworthy <strong>Large Language Model (LLM)</strong> hallucination control policies for safety-sensitive applications.</li>
-                            <li>Advancing <strong>Conformal Prediction</strong>-based uncertainty quantification with theoretical guarantees to facilitate effective human–ML collaboration (e.g., Clinician-in-the-Loop Uncertainty-aware predictive systems and beyond).</li>
-                            <li>Developing uncertainty-aware energy management methods for wearable Internet of Things (IoT) devices for mobile health applications and beyond.</li>
-                        </ul>
+                        <div class="about-split">
+                            <div class="about-split-col">
+                                <h3 class="about-subheading">Research</h3>
+                                <ul class="about-compact-list">
+                                    <li>LLM hallucination control</li>
+                                    <li>Conformal prediction</li>
+                                    <li>Wearable IoT energy management</li>
+                                </ul>
+                            </div>
+                            <div class="about-split-col">
+                                <h3 class="about-subheading">Interests</h3>
+                                <ul class="about-compact-list">
+                                    <li>Large Language Models</li>
+                                    <li>LLM hallucination control</li>
+                                    <li>Trustworthy machine learning</li>
+                                    <li>AI safety</li>
+                                    <li>Human–ML collaboration</li>
+                                    <li>AI in Healthcare</li>
+                                </ul>
+                            </div>
+                        </div>
                     </div>
                 </section>
             </div>

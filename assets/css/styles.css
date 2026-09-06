@@ -78,7 +78,7 @@ body {
   font-size: 16.5px;
   line-height: 1.65;
   color: var(--primary-text);
-  padding-top: 20px;
+  padding-top: 8px;
   background: linear-gradient(
     180deg,
     var(--bg-0) 0%,
@@ -112,7 +112,7 @@ a:hover {
 
 .header {
   position: relative;
-  margin: 16px 16px 30px 16px;
+  margin: 10px 16px 30px 16px;
   padding: 22px 30px;
   border-radius: 14px;
   border: 1px solid var(--card-border);
@@ -136,12 +136,13 @@ a:hover {
   padding-right: 30px;
 }
 
-.header-top {
+.site-top {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 12px;
-  margin-bottom: 22px;
+  gap: 12px 20px;
+  margin: 0 16px;
+  padding: 8px 20px;
   flex-wrap: wrap;
 }
 
@@ -154,7 +155,7 @@ a:hover {
 
 .header-nav li {
   display: inline-block;
-  margin-right: 14px;
+  margin-right: 16px;
   margin-left: 0;
 }
 
@@ -164,7 +165,6 @@ a:hover {
 
 .header-nav a {
   font-weight: 600;
-  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.35);
 }
 
 .header-main {
@@ -272,20 +272,50 @@ html[data-theme="light"] .header .profile-content .name {
 }
 
 .header-about .content p {
-  margin-bottom: 0.7em;
+  margin-bottom: 0.65em;
 }
 
 .header-about .content ul {
   margin: 0;
-  padding-left: 1.2em;
+  padding-left: 1.15em;
 }
 
 .header-about .content li {
-  margin-bottom: 0.35em;
+  margin-bottom: 0.2em;
 }
 
 .header-about .content li:last-child {
   margin-bottom: 0;
+}
+
+.about-split {
+  display: flex;
+  gap: 28px;
+  align-items: flex-start;
+}
+
+.about-split-col {
+  flex: 1 1 0;
+  min-width: 0;
+}
+
+.about-subheading {
+  font-size: 1.02rem;
+  font-weight: 700;
+  margin: 0 0 6px 0;
+  color: var(--primary-text);
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.35);
+}
+
+.about-compact-list {
+  margin: 0;
+  padding-left: 1.15em;
+}
+
+.about-compact-list li {
+  font-size: 14.5px;
+  line-height: 1.4;
+  white-space: nowrap;
 }
 
 /* Theme toggle */
@@ -938,9 +968,10 @@ html[data-theme="light"] #publications a.paper-title {
     text-align: center;
   }
 
-  .header-top {
+  .site-top {
     flex-direction: column;
     align-items: center;
+    padding: 8px 12px;
   }
 
   .header-nav ul {
@@ -973,5 +1004,14 @@ html[data-theme="light"] #publications a.paper-title {
     min-width: 0;
     width: 100%;
     text-align: left;
+  }
+
+  .about-split {
+    flex-direction: column;
+    gap: 14px;
+  }
+
+  .about-compact-list li {
+    white-space: normal;
   }
 }
