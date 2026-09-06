@@ -588,12 +588,16 @@ html[data-theme="light"] .header .profile-content .name {
 /* ========================= */
 
 .news-list {
-  list-style: disc;
-  padding-left: 1.35em;
+  list-style: none;
+  padding: 0;
   margin: 0;
 }
 
 .news-list li {
+  display: grid;
+  grid-template-columns: 9.75rem auto 1fr;
+  column-gap: 0.55rem;
+  align-items: baseline;
   padding: 8px 0;
   border-bottom: 1px solid var(--card-border);
   line-height: 1.55;
@@ -612,6 +616,12 @@ html[data-theme="light"] .header .profile-content .name {
   font-weight: 700;
   color: var(--accent);
   white-space: nowrap;
+  text-align: right;
+}
+
+.news-sep {
+  font-weight: 700;
+  color: var(--accent);
 }
 
 .news-medal {
