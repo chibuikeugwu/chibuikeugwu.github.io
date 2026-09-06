@@ -308,6 +308,16 @@ html[data-theme="light"] .header .profile-content .name {
   margin-left: auto;
 }
 
+.about-interests-col .about-subheading {
+  font-size: 1.12rem;
+}
+
+.about-interests-col .about-compact-list li {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.45;
+}
+
 .about-subheading {
   font-size: 1.02rem;
   font-weight: 700;
