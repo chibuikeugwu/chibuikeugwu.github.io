@@ -290,13 +290,22 @@ html[data-theme="light"] .header .profile-content .name {
 
 .about-split {
   display: flex;
-  gap: 28px;
+  justify-content: space-between;
   align-items: flex-start;
+  gap: 32px;
 }
 
 .about-split-col {
-  flex: 1 1 0;
   min-width: 0;
+}
+
+.about-research-col {
+  flex: 1 1 auto;
+}
+
+.about-interests-col {
+  flex: 0 0 auto;
+  margin-left: auto;
 }
 
 .about-subheading {
