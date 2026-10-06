@@ -16,8 +16,8 @@ body {
 }
 
 .header {
-  margin: 4px 0 8px;
-  padding: 12px 0;
+  margin: 4px 0 0;
+  padding: 12px 0 6px;
   background: transparent;
   border: 0;
   border-radius: 0;
@@ -30,7 +30,7 @@ body {
 }
 
 .sections-wrapper {
-  padding-top: 12px !important;
+  padding-top: 6px !important;
 }
 
 .top-intro-row .section-inner {
