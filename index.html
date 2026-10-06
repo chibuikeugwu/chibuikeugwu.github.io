@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="dark">
+<html lang="en" data-theme="light">
 
 <head>
     <title>Chibuike E. Ugwu</title>
@@ -22,7 +22,7 @@
     <script>
         (function () {
             var t = localStorage.getItem("site-theme");
-            if (t !== "light" && t !== "dark") t = "dark";
+            if (t !== "light" && t !== "dark") t = "light";
             document.documentElement.setAttribute("data-theme", t);
         })();
     </script>
@@ -40,10 +40,10 @@
                 <li><a href="#service">Service</a></li>
             </ul>
         </nav>
-        <button type="button" id="themeToggle" class="theme-toggle-btn" aria-pressed="true"
-            title="Switch to light mode">
-            <i class="fas fa-sun" aria-hidden="true"></i>
-            <span class="theme-toggle-label">Light</span>
+        <button type="button" id="themeToggle" class="theme-toggle-btn" aria-pressed="false"
+            title="Switch to dark mode">
+            <i class="fas fa-moon" aria-hidden="true"></i>
+            <span class="theme-toggle-label">Dark</span>
         </button>
     </div>
 
@@ -626,7 +626,7 @@
 
     <script type="text/javascript" src="assets/plugins/popper.min.js"></script>
     <script type="text/javascript" src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="assets/js/theme.js"></script>
+    <script type="text/javascript" src="assets/js/theme.js?v=2"></script>
     <script type="text/javascript" src="assets/js/main.js"></script>
 </body>
 

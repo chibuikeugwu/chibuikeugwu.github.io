@@ -23,7 +23,7 @@
   function preferredTheme() {
     const saved = localStorage.getItem(STORAGE_KEY);
     if (saved === "light" || saved === "dark") return saved;
-    return "dark";
+    return "light";
   }
 
   document.addEventListener("DOMContentLoaded", function () {
@@ -33,7 +33,7 @@
     const toggle = document.getElementById("themeToggle");
     if (!toggle) return;
     toggle.addEventListener("click", function () {
-      const current = root.getAttribute("data-theme") || "dark";
+      const current = root.getAttribute("data-theme") || "light";
       applyTheme(current === "dark" ? "light" : "dark");
     });
   });
