@@ -1,0 +1,65 @@
+/* Optional plain layout experiment. Remove its link in index.html to revert. */
+:root,
+html[data-theme="dark"] {
+  --bg-0: #181a1b;
+  --card-bg: #181a1b;
+  --card-border: rgba(232, 238, 243, 0.12);
+}
+
+html[data-theme="light"] {
+  --bg-0: #ffffff;
+  --card-bg: #ffffff;
+  --card-border: rgba(26, 40, 50, 0.12);
+}
+
+body {
+  background: var(--bg-0);
+}
+
+.header {
+  background: transparent;
+  border: 0;
+  border-radius: 0;
+  box-shadow: none;
+}
+
+.section .section-inner {
+  background: transparent;
+  border: 0;
+  border-radius: 0 !important;
+  box-shadow: none !important;
+}
+
+.header-about .heading,
+.section .heading,
+.cv-subheading {
+  border-bottom: 1px solid var(--card-border);
+}
+
+.header .profile-content .name,
+.header-about .heading,
+.header-about .content p,
+.header-about .content li,
+.about-subheading {
+  text-shadow: none;
+}
+
+.header .profile-image,
+html[data-theme="light"] .header .profile-image {
+  border: 0;
+  box-shadow: none;
+}
+
+.org-logo-wrap,
+#publications .paper-thumb,
+#publications .paper-thumb img,
+#projects .projects-hero-image {
+  border: 0;
+  border-radius: 0;
+  box-shadow: none;
+}
+
+.footer {
+  background: transparent;
+  border-top: 1px solid var(--card-border);
+}
