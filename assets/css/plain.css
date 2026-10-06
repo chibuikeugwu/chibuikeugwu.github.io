@@ -17,10 +17,45 @@ body {
 }
 
 .header {
+  margin: 4px 0 8px;
+  padding: 12px 0;
   background: transparent;
   border: 0;
   border-radius: 0;
   box-shadow: none;
+}
+
+.header .container {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.sections-wrapper {
+  padding-top: 12px !important;
+}
+
+.top-intro-row .section-inner {
+  padding: 12px 20px;
+}
+
+.top-intro-row .org-item {
+  margin-bottom: 12px;
+}
+
+.top-intro-row .org-item:last-child {
+  margin-bottom: 0;
+}
+
+@media (min-width: 992px) {
+  .header-main {
+    gap: 28px;
+  }
+
+  .header .profile-image {
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+  }
 }
 
 .section .section-inner {
