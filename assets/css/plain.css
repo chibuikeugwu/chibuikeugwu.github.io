@@ -82,6 +82,10 @@ body {
   text-shadow: none;
 }
 
+.header .profile-content .name {
+  font-weight: 900;
+}
+
 .header .profile-image,
 html[data-theme="light"] .header .profile-image {
   border: 0;
