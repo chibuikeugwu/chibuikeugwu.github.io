@@ -44,7 +44,7 @@ Education
 <div style="border: 2px solid #000000; padding: 15px; background-color: #F0FBFD; border-radius: 15px; margin-bottom: 20px;">
   <ul style="list-style-type: none; padding-left: 0;">
     <li>
-      <span style="font-weight: bold; color: #008000;">Ph.D., Computer Science</span> (Artificial Intelligence)<br>
+      <span style="font-weight: bold; color: #008000;">Ph.D., Computer Science</span><br>
       <a href='https://wsu.edu' target='_blank' style="color: #000000; text-decoration: none; font-weight: bold; padding-left: 20px; display: inline-block;">Washington State University</a> (2022 - present)
     </li>
     <!-- <li>
