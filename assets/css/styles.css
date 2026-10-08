@@ -478,7 +478,7 @@ html[data-theme="light"] .header .profile-content .name {
   height: 52px;
   padding: 5px;
   border-radius: 8px;
-  background: #ffffff;
+  background: transparent;
   border: 1px solid var(--card-border);
   display: flex;
   align-items: center;
