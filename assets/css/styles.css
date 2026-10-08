@@ -491,6 +491,11 @@ html[data-theme="light"] .header .profile-content .name {
   background: #0057b8;
 }
 
+/* Compensate for the UNN crest's wider shape and transparent margins. */
+.org-logo-wrap.logo-unn {
+  padding: 0;
+}
+
 .org-logo-wrap img {
   width: 100%;
   height: 100%;
