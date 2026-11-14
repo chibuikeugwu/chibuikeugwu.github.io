@@ -6,10 +6,11 @@ html[data-theme="dark"] {
 }
 
 html[data-theme="light"] {
-  --bg-0: #F8FAFC;
+  --bg-0: #F0F2F4;
   --card-bg: #FFFFFF;
-  --card-border: #E2E8F0;
+  --card-border: rgba(26, 40, 50, 0.12);
 }
+
 
 
 body {
