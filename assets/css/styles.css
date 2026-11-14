@@ -1,68 +1,62 @@
 /*!
- * Personal academic site — charcoal dark + light mode
+ * Personal academic site — charcoal dark + soft off-white light mode
  */
 
 /* ========================= */
 /* DARK THEME (default)      */
 /* ========================= */
-
 :root,
-
-html[data-theme="light"] {
-  color-scheme: light;
-  --bg-0: #F8FAFC;
-  --bg-1: #F8FAFC;
-  --bg-2: #F8FAFC;
-  --card-bg: #FFFFFF;
-  --header-bg-start: #F8FAFC;
-  --header-bg-end: #F8FAFC;
-  --card-border: #E2E8F0;
+html[data-theme="dark"] {
+  color-scheme: dark;
+  --bg-0: #181A1B;
+  --bg-1: #1E2225;
+  --bg-2: #242A2E;
+  --card-bg: #202528;
+  --header-bg-start: #181A1B;
+  --header-bg-end: #202528;
+  --card-border: rgba(232, 238, 243, 0.16);
   --primary-text: #FFFFFF;
   --secondary-text: #E2E8F0;
   --tertiary-text: #CBD5E1;
+  --accent: #5EC4B0;
+  --accent-hover: #83DCCB;
+  --accent-muted: rgba(94, 196, 176, 0.12);
+  --social-bg: #303638;
+  --btn-bg: #5EC4B0;
+  --btn-bg-hover: #83DCCB;
+  --shadow: rgba(0, 0, 0, 0.25);
+  --header-inset: rgba(255, 255, 255, 0.06);
+  --header-overlay: none;
+}
+
+/* ========================= */
+/* LIGHT THEME               */
+/* ========================= */
+html[data-theme="light"] {
+  color-scheme: light;
+  --bg-0: #F0F2F4;
+  --bg-1: #EDF0F3;
+  --bg-2: #E8ECEF;
+  --card-bg: #F7F9FB;
+  --header-bg-start: #DFE8EF;
+  --header-bg-end: #F0F2F4;
+  --card-border: #CDD7E0;
+  --primary-text: #1A2832;
+  --secondary-text: #3D4F5C;
+  --tertiary-text: #5C7080;
   --accent: #2563EB;
   --accent-hover: #1D4ED8;
   --accent-muted: rgba(37, 99, 235, 0.12);
   --social-bg: #DBEAFE;
   --btn-bg: #2563EB;
   --btn-bg-hover: #1D4ED8;
-  --btn-bg-hover: #1D4ED8;
-  --shadow: rgba(15, 23, 42, 0.08);
-  --header-inset: rgba(255, 255, 255, 0.6);
-  --header-overlay: none;
-}
-
-
-/* ========================= */
-/* LIGHT THEME               */
-/* ========================= */
-
-html[data-theme="light"] {
-  color-scheme: light;
-
-  --bg-0: #eef2f5;
-  --bg-1: #e4eaef;
-  --bg-2: #d8e1e8;
-  --card-bg: #ffffff;
-  --header-bg-start: #dce8ee;
-  --header-bg-end: #f5f8fa;
-  --card-border: #c5d3dc;
-  --primary-text: #1a2832;
-  --secondary-text: #3d4f5c;
-  --tertiary-text: #5c7080;
-  --accent: #2a7a6d;
-  --accent-hover: #1f6358;
-  --accent-muted: rgba(42, 122, 109, 0.12);
-  --social-bg: #c5d8e0;
-  --btn-bg: #2a7a6d;
-  --btn-bg-hover: #1f6358;
-  --shadow: rgba(26, 40, 50, 0.12);
+  --shadow: rgba(26, 40, 50, 0.10);
   --header-inset: rgba(255, 255, 255, 0.6);
   --header-overlay: linear-gradient(
     135deg,
-    rgba(236, 244, 248, 0.9) 0%,
-    rgba(220, 235, 230, 0.85) 50%,
-    rgba(232, 240, 245, 0.92) 100%
+    rgba(236, 244, 248, 0.90) 0%,
+    rgba(226, 235, 244, 0.88) 50%,
+    rgba(232, 240, 248, 0.92) 100%
   );
 }
 
