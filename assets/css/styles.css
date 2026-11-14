@@ -792,7 +792,7 @@ html[data-theme="light"] #publications a.paper-title {
 #publications .me {
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
-  color: var(--accent);
+  color: var(--primary-text);
 }
 
 #publications .paper-with-thumb {
