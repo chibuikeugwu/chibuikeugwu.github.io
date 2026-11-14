@@ -17,9 +17,9 @@ html[data-theme="light"] {
   --header-bg-start: #F8FAFC;
   --header-bg-end: #F8FAFC;
   --card-border: #E2E8F0;
-  --primary-text: #1F2937;
-  --secondary-text: #475569;
-  --tertiary-text: #64748B;
+  --primary-text: #FFFFFF;
+  --secondary-text: #E2E8F0;
+  --tertiary-text: #CBD5E1;
   --accent: #2563EB;
   --accent-hover: #1D4ED8;
   --accent-muted: rgba(37, 99, 235, 0.10);
