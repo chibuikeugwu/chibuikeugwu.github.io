@@ -22,9 +22,10 @@ html[data-theme="light"] {
   --tertiary-text: #CBD5E1;
   --accent: #2563EB;
   --accent-hover: #1D4ED8;
-  --accent-muted: rgba(37, 99, 235, 0.10);
-  --social-bg: #E2E8F0;
+  --accent-muted: rgba(37, 99, 235, 0.12);
+  --social-bg: #DBEAFE;
   --btn-bg: #2563EB;
+  --btn-bg-hover: #1D4ED8;
   --btn-bg-hover: #1D4ED8;
   --shadow: rgba(15, 23, 42, 0.08);
   --header-inset: rgba(255, 255, 255, 0.6);
