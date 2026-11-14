@@ -18,12 +18,11 @@ html[data-theme="dark"] {
   --primary-text: #FFFFFF;
   --secondary-text: #E2E8F0;
   --tertiary-text: #CBD5E1;
-  --accent: #5EC4B0;
-  --accent-hover: #83DCCB;
-  --accent-muted: rgba(94, 196, 176, 0.12);
-  --social-bg: #303638;
-  --btn-bg: #5EC4B0;
-  --btn-bg-hover: #83DCCB;
+  --accent: #60A5FA;
+  --accent-hover: #93C5FD;
+  --accent-muted: rgba(96, 165, 250, 0.15);
+  --btn-bg: #2563EB;
+  --btn-bg-hover: #1D4ED8;
   --shadow: rgba(0, 0, 0, 0.25);
   --header-inset: rgba(255, 255, 255, 0.06);
   --header-overlay: none;
